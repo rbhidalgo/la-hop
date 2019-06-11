@@ -1,8 +1,8 @@
 import React, {Component } from 'react';
 import { Switch, Route, withRouter } from 'react-router-dom'
 import { PacmanLoader } from 'react-spinners'
-// import logo from './logo.svg';
 
+// import Map from './components/Map'
 import NavBar from './components/Nav'
 
 import * as routes from './constants/routes'
@@ -10,7 +10,7 @@ import './App.css';
 
 class App extends Component {
   state = {
-    loading: false
+    loading: true
   }
   render(){
     const { loading } = this.state
@@ -21,6 +21,7 @@ class App extends Component {
 
         <div className="grid-header">
           <h1>Hello World</h1>
+          <PacmanLoader color={'gold'} size={10} />
         </div>
 
         <div className="grid-nav">
