@@ -11,3 +11,66 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+/*********************************************************************/
+/*************************** SCALABLE GRID ***************************/
+/*********************************************************************/
+.grid-container {
+  width: 100%;
+  display: grid;
+  position: relative;
+  grid-template-columns: 100vw;
+  grid-template-rows: 4rem 10rem 5rem auto 5rem;
+grid-template-areas:
+  ' header '
+  ' nav '
+  ' image '
+  ' main '
+  ' footer ';
+   grid-gap: 0;
+}
+
+.grid-header { 
+  grid-area: header; 
+  width: 100vw;
+  position: relative;
+  z-index: 10;
+  background-color: skyblue;
+}
+
+.grid-nav { 
+  grid-area: nav; 
+  position: relative;
+  background-color: dodgerblue;
+}
+
+.grid-image { 
+  grid-area: image; 
+  position: relative;
+  background-color: lightblue;
+}
+
+.grid-main { 
+  grid-area: main; 
+  position: relative;
+  background-color: teal;
+}
+
+.grid-footer { 
+  grid-area: footer; 
+  position: static;
+  background-color: midnightblue;
+}
+
+
+/*********************************************************************/
+/*************************** NAVBAR BUTTON ***************************/
+/*********************************************************************/
+
+.navBar {
+  background-color: pink;
+}
+
+.navBtn {
+  background-color: purple;
+}
