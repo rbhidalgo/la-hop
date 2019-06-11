@@ -1,12 +1,12 @@
 const mongoose = require("mongoose");
 
 const TicketSchema = new mongoose.Schema({
-  address: { type: String, required: true },
+  address: { type: String },
   location: { type: String },
-  date: { type: Date, required: true },
-  peopleCount: { type: Number, required: true },
+  date: { type: Date },
+  peopleCount: { type: Number },
   peopleNames: { type: String },
-  physicalDescript: { type: String, required: true },
+  physicalDescript: { type: String },
   needsDescript: { type: String },
   tags: [{ type: String }],
   name: { type: String },
