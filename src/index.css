@@ -1,3 +1,8 @@
+html {
+  height: 100vh;
+  width: 100vw;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -16,15 +21,15 @@ code {
 /*************************** SCALABLE GRID ***************************/
 /*********************************************************************/
 .grid-container {
-  width: 100%;
+  width: 100vw;
+  min-height: 100vh;
   display: grid;
   position: relative;
   grid-template-columns: 100vw;
-  grid-template-rows: 4rem 10rem 5rem auto 5rem;
+  grid-template-rows: 4rem 4rem auto 5rem;
 grid-template-areas:
   ' header '
   ' nav '
-  ' image '
   ' main '
   ' footer ';
    grid-gap: 0;
@@ -44,22 +49,16 @@ grid-template-areas:
   background-color: dodgerblue;
 }
 
-.grid-image { 
-  grid-area: image; 
+.grid-main { 
+  grid-area: main; 
   position: relative;
   background-color: lightblue;
 }
 
-.grid-main { 
-  grid-area: main; 
-  position: relative;
-  background-color: teal;
-}
-
 .grid-footer { 
   grid-area: footer; 
-  position: static;
-  background-color: midnightblue;
+  position: sticky;
+  background-color: lightgray;
 }
 
 
@@ -68,9 +67,9 @@ grid-template-areas:
 /*********************************************************************/
 
 .navBar {
-  background-color: pink;
+  background-color: orange;
 }
 
 .navBtn {
-  background-color: purple;
+  background-color: yellow;
 }
