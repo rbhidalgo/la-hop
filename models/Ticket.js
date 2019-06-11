@@ -6,7 +6,7 @@ const TicketSchema = new mongoose.Schema({
   date: { type: Date, required: true },
   peopleCount: { type: Number, required: true },
   peopleNames: { type: String },
-  phyiscalDescript: { type: String, required: true },
+  physicalDescript: { type: String, required: true },
   needsDescript: { type: String },
   tags: [{ type: String }],
   name: { type: String },
