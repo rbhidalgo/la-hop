@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 
-const Trade = require("../models/Ticket");
+const Ticket = require("../models/Ticket");
 
 // Creating a ticket request
 router.post("/create", async (req, res) => {
