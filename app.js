@@ -5,3 +5,33 @@ const logger = require("morgan");
 const cors = require("cors");
 require("dotenv").config();
 const PORT = process.env.PORT;
+
+require("./db/db");
+
+// Routes
+
+const app = express();
+
+app.use(logger("dev"));
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+app.use(cookieParser());
+app.use(
+  session({
+    secret: "hello",
+    resave: false,
+    saveUninitialized: false
+  })
+);
+
+// app.use('/users')
+
+app.use((req, res, next) => {
+  next(createError(404));
+});
+
+app.listen(PORT, err => {
+  console.log(err || "App is listening on port, ", PORT);
+});
+
+module.exports = app;
