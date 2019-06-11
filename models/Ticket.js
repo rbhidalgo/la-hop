@@ -16,3 +16,5 @@ const TicketSchema = new mongoose.Schema({
   phone: { type: String },
   agreement: { type: Boolean }
 });
+
+module.exports = mongoose.model("Ticket", TicketSchema);
