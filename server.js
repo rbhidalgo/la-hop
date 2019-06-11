@@ -8,7 +8,7 @@ const PORT = process.env.PORT;
 require("./db/db");
 
 // Routes
-// const ticketRouter = require('./routes/tickets')
+const ticketRouter = require("./routes/tickets");
 
 const app = express();
 
@@ -17,7 +17,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
-// app.use('/users')
+app.use("/ticket", ticketRouter);
 
 app.use((req, res, next) => {
   next(createError(404));
