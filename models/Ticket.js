@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const TicketSchema = new mongoose.Schema({
   address: { type: String, required: true },
-  local: { type: String },
+  location: { type: String },
   date: { type: Date, required: true },
   peopleCount: { type: Number, required: true },
   peopleNames: { type: String },
