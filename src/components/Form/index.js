@@ -30,23 +30,28 @@ class Form extends Component {
 
   onSubmit = async e => {
     e.preventDefault();
-    const createTicket = await fetch("http://localhost:3001/ticket/create", {
-      method: "POST",
-      credentials: "include",
-      body: JSON.stringify(this.state),
-      headers: {
-        "Content-type": "application/json"
-      }
-    });
-    const parsedResponse = await createTicket.json();
-    if (parsedResponse.success) {
-      // setting localStorage on front end so user remains logged in
-      // logout = localStorage.clear()
-      // and clear sessions in back
-      this.setState({
-        message: parsedResponse.message
-      });
-    } 
+    try{
+        const createTicket = await fetch("http://localhost:3001/ticket/create", {
+            method: "POST",
+            // credentials: "include",
+            body: JSON.stringify(this.state),
+            headers: {
+              "Content-Type": "application/json"
+            }
+          });
+          const parsedResponse = await createTicket.json();
+          if (parsedResponse.success) {
+            // setting localStorage on front end so user remains logged in
+            // logout = localStorage.clear()
+            // and clear sessions in back
+            this.setState({
+              message: parsedResponse.message
+            });
+          } 
+    } catch(err) {
+        console.log(err)
+    }
+ 
   };
 
   render() {
