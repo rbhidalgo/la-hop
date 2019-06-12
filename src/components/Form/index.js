@@ -3,6 +3,13 @@ import { Redirect } from "react-router-dom";
 
 // // import './Register.css'
 
+const tagsList = [
+    {id:1, text:"Food"},
+    {id:2, text:"Clothing"},
+    {id:3, text:"Mental Health Care"},
+    {id:4, text:"General Assistance"}
+];
+
 class Form extends Component {
   state = {
     message: "",
