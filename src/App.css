@@ -1,1 +1,10 @@
 @import "../node_modules/bootstrap/dist/css/bootstrap.css";
+
+.form-control {
+    text-align: center;
+    width: 200px;
+}
+
+.table > *{
+    text-align: center !important;
+}
