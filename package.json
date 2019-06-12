@@ -16,7 +16,8 @@
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",
     "react-spinner": "^0.2.7",
-    "react-spinners": "^0.5.4"
+    "react-spinners": "^0.5.4",
+    "react-tag-buttons": "0.0.2"
   },
   "scripts": {
     "server": "node server.js",
