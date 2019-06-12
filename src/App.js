@@ -7,7 +7,7 @@ import MapContainer from './components/MapContainer'
 import LearnMore    from './components/LearnMore'
 import Form         from './components/Form'
 import DatePicker   from './components/DatePicker'
-import ProgressBar  from './components/ProgressBar'
+import StepProgressBar  from './components/ProgressBar'
 
 
 import * as routes  from './constants/routes'
