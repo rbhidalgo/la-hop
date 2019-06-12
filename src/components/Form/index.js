@@ -114,7 +114,11 @@ class Form extends Component {
             <input type="text" placeholder="email" name="email" onChange={this.changeHandler} value={email}/>
             <input type="text" placeholder="phone" name="phone" onChange={this.changeHandler} value={phone}/>
             <input type="checkbox" name="agreement" />
-            {/* <Tags tagsList={this.tagsList}/> */}
+            <TagButtons
+                    dataSource={tagsList}
+                    selectedDataSource={selectedDataSource}
+                    onTagClick={this.onTagClick}
+                />
             <button type="submit">Submit</button>
         </form>
   
