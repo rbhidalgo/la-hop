@@ -7,6 +7,7 @@ import MapContainer from './components/MapContainer'
 import LearnMore    from './components/LearnMore'
 import Form         from './components/Form'
 import DatePicker   from './components/DatePicker'
+import StepProgressBar  from './components/ProgressBar'
 
 
 import * as routes  from './constants/routes'
@@ -46,6 +47,7 @@ class App extends Component {
           <Route exact path={routes.REQUEST} render={() => <>
             <MapContainer />
             <DatePicker />
+            <StepProgressBar />
             <Form />
           </> }/>
           <Route exact path={routes.ROOT} render={() => <></> }/>
