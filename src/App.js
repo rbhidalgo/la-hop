@@ -47,7 +47,7 @@ class App extends Component {
           <Route exact path={routes.REQUEST} render={() => <>
             <MapContainer />
             <DatePicker />
-            <ProgressBar />
+            <StepProgressBar />
             <Form />
           </> }/>
           <Route exact path={routes.ROOT} render={() => <></> }/>
