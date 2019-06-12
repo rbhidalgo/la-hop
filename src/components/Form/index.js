@@ -1,7 +1,15 @@
 import React, { Component } from "react";
 import { Redirect } from "react-router-dom";
+import TagButtons from 'react-tag-buttons';
 
 // // import './Register.css'
+
+const tagsList = [
+    {id:1, text:"Food"},
+    {id:2, text:"Clothing"},
+    {id:3, text:"Mental Health Care"},
+    {id:4, text:"General Assistance"}
+];
 
 class Form extends Component {
   state = {
@@ -20,6 +28,18 @@ class Form extends Component {
     phone: '',
     agreement: false
   };
+
+  onTagClick = (currSelectedState, id, text) => {
+    let {tags} = this.state;
+    if(!currSelectedState){
+        tags.push({id:id, text:text});
+    }else{
+        tags = tags.filter((item)=>{return item.id !== id});
+    }
+    this.setState({
+        tags: tags
+    });
+};
 
   changeHandler = e => {
     this.setState({
@@ -67,7 +87,7 @@ class Form extends Component {
   };
 
   render() {
-    const { message, location, date, peopleCount, peopleNames, physicalDescript, needsDescript, tags, name, org, selfDescript, email, phone, agreement } = this.state;
+    const { message, location, date, peopleCount, peopleNames, physicalDescript, needsDescript, tags, name, org, selfDescript, email, phone, agreement, selectedDataSource } = this.state;
     return (
     <> 
         <h1>{message}</h1>
@@ -78,7 +98,7 @@ class Form extends Component {
             <input type="text" placeholder="peopleNames" name="peopleNames" onChange={this.changeHandler} value={peopleNames}/>
             <textarea
                 type="text"
-                placeholder="pyshicalDescript"
+                placeholder="physicalDescript"
                 name="physicalDescript"
                 onChange={this.changeHandler}
                 value={physicalDescript}
@@ -91,6 +111,11 @@ class Form extends Component {
             <input type="text" placeholder="email" name="email" onChange={this.changeHandler} value={email}/>
             <input type="text" placeholder="phone" name="phone" onChange={this.changeHandler} value={phone}/>
             <input type="checkbox" name="agreement" />
+            <TagButtons
+                    dataSource={tagsList}
+                    selectedDataSource={tags}
+                    onTagClick={this.onTagClick}
+                />
             <button type="submit">Submit</button>
         </form>
   
