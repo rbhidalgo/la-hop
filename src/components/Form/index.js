@@ -1,14 +1,9 @@
 import React, { Component } from "react";
 import { Redirect } from "react-router-dom";
 
-// // import './Register.css'
+import Tags from '../Tags'
 
-const tagsList = [
-    {id:1, text:"Food"},
-    {id:2, text:"Clothing"},
-    {id:3, text:"Mental Health Care"},
-    {id:4, text:"General Assistance"}
-];
+// // import './Register.css'
 
 class Form extends Component {
   state = {
@@ -98,6 +93,7 @@ class Form extends Component {
             <input type="text" placeholder="email" name="email" onChange={this.changeHandler} value={email}/>
             <input type="text" placeholder="phone" name="phone" onChange={this.changeHandler} value={phone}/>
             <input type="checkbox" name="agreement" />
+            {/* <Tags tagsList={this.tagsList}/> */}
             <button type="submit">Submit</button>
         </form>
   
