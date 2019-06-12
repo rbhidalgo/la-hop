@@ -32,6 +32,18 @@ class Form extends Component {
     agreement: false
   };
 
+  onTagClick = (currSelectedState, id, text) => {
+    let {selectedDataSource} = this.state;
+    if(!currSelectedState){
+        selectedDataSource.push({id:id, text:text});
+    }else{
+        selectedDataSource = selectedDataSource.filter((item)=>{return item.id !== id});
+    }
+    this.setState({
+        selectedDataSource: selectedDataSource
+    });
+};
+
   changeHandler = e => {
     this.setState({
       [e.target.name]: e.target.value
