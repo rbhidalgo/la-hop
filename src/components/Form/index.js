@@ -90,7 +90,7 @@ class Form extends Component {
   };
 
   render() {
-    const { message, location, date, peopleCount, peopleNames, physicalDescript, needsDescript, tags, name, org, selfDescript, email, phone, agreement } = this.state;
+    const { message, location, date, peopleCount, peopleNames, physicalDescript, needsDescript, tags, name, org, selfDescript, email, phone, agreement, selectedDataSource } = this.state;
     return (
     <> 
         <h1>{message}</h1>
