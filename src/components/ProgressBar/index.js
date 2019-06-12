@@ -1,8 +1,9 @@
-import React from "react";
+import React, { Component } from "react";
 import "react-step-progress-bar/styles.css";
 import { ProgressBar, Step } from "react-step-progress-bar";
 
-class StepProgressBar extends React.Component {
+class StepProgressBar extends Component {
+
   render() {
     return (
         <ProgressBar percent={75}>
