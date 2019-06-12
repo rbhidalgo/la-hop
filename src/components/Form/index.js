@@ -93,7 +93,7 @@ class Form extends Component {
         <h1>{message}</h1>
         <form onSubmit={this.onSubmit}>
             <textarea type="text" placeholder="location" name="location" onChange={this.changeHandler} value={location}/>
-            <input type="date" placeholder="date" name="date" onChange={this.changeHandler} value={date}/>
+            {/* <input type="date" placeholder="date" name="date" onChange={this.changeHandler} value={date}/> */}
             <input type="text" placeholder="peopleCount" name="peopleCount" onChange={this.changeHandler} value={peopleCount}/>
             <input type="text" placeholder="peopleNames" name="peopleNames" onChange={this.changeHandler} value={peopleNames}/>
             <textarea

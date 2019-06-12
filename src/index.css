@@ -44,6 +44,21 @@ grid-template-areas:
   color: white;
 }
 
+.grid-header > div {
+  display: inline-block;
+  height: 53px;
+  font-size: 18px;
+  /* padding-top: .33125rem;
+  padding-bottom: .33125rem; */
+  margin-block-start:  0;
+  margin-block-end: 0;
+  font-family: "Open Sans",sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #fff;
+    text-align: left;
+}
+
 .grid-nav { 
   grid-area: nav; 
   position: relative;
@@ -79,29 +94,51 @@ grid-template-areas:
   /* background-color: yellow; */
   /* display: block; */
   /* margin: 0; */
-  padding: 8px;
+  padding: 11px;
   color: white;
   text-decoration: none;
 }
+
 .navBtn:hover {
-  /* background-color: yellow; */
-  /* display: block;
-  padding: .5rem 1rem;
-  color: white;
-  text-decoration: none; */
+background-color: darkgrey;
+
 }
 
 .active {
   /* color: white; */
-  /* background-color: orange; */
+  background-color: black;
 }
 
-/*********************************************************************/
-/*************************** Tag Buttons ***************************/
-/*********************************************************************/
-/* .selectable-tag {
-  border: 3px solid black
+/* .headerBlack {
+  background-color: black;
 } */
+
+.top-left {
+  width: 6vw;
+  float: left;
+  background-color: black;
+  
+}
+
+.top-right {
+  /* width: 18.3vw; */
+  float: right;
+  background-color: black;
+}
+
+.mid-left {
+  padding: 2px 11px;
+  width: 106px;
+  border-right: 1px white solid;
+  max-height: 33px;
+  margin-top: 10px !important;
+  
+}
+
+.mid-right {
+  padding: 0 11px;
+  width: auto;
+}
 
 /*********************************************************************/
 /***************************  MEDIA QUERY  ***************************/
