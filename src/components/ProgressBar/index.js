@@ -7,7 +7,7 @@ class StepProgressBar extends Component {
         percent: 0
     }
   render() {
-      { percent } = this.state
+     const { percent } = this.state
     return (
         <ProgressBar percent={percent}>
         <Step>
