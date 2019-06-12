@@ -8,8 +8,10 @@ import LearnMore    from './components/LearnMore'
 import Form         from './components/Form'
 import DatePicker   from './components/DatePicker'
 
+
 import * as routes  from './constants/routes'
 import './App.css'
+import 'react-tag-buttons/lib/css/styles.css'
 
 
 class App extends Component {
@@ -26,8 +28,10 @@ class App extends Component {
       <div className="grid-container">
 
         <div className="grid-header">
-          <h1>Hello World</h1>
-          <PacmanLoader color={'gold'} size={10} />
+          <div className="top-left"><img src="grid_desktop.png"></img></div>
+          <div className="mid-left">LAHSA</div><div className="mid-right">Los Angeles Homeless Outreach Portal Support</div>
+          <div className="top-right"><img src="contact_desktop.png" /></div>
+          {/* <PacmanLoader color={'gold'} size={10} /> */}
         </div>
 
         <div className="grid-nav">
