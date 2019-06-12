@@ -2,8 +2,6 @@ import React, { Component } from "react";
 import { Redirect } from "react-router-dom";
 import TagButtons from 'react-tag-buttons';
 
-import Tags from '../Tags'
-
 // // import './Register.css'
 
 const tagsList = [
@@ -33,14 +31,14 @@ class Form extends Component {
   };
 
   onTagClick = (currSelectedState, id, text) => {
-    let {selectedDataSource} = this.state;
+    let {tags} = this.state;
     if(!currSelectedState){
-        selectedDataSource.push({id:id, text:text});
+        tags.push({id:id, text:text});
     }else{
-        selectedDataSource = selectedDataSource.filter((item)=>{return item.id !== id});
+        tags = tags.filter((item)=>{return item.id !== id});
     }
     this.setState({
-        selectedDataSource: selectedDataSource
+        tags: tags
     });
 };
 
@@ -116,7 +114,7 @@ class Form extends Component {
             <input type="checkbox" name="agreement" />
             <TagButtons
                     dataSource={tagsList}
-                    selectedDataSource={selectedDataSource}
+                    selectedDataSource={tags}
                     onTagClick={this.onTagClick}
                 />
             <button type="submit">Submit</button>
