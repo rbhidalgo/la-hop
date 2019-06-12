@@ -6,7 +6,20 @@ import { Redirect } from "react-router-dom";
 
 class Form extends Component {
   state = {
-    message: ""
+    message: "",
+    location: '',
+    date: '',
+    peopleCount: 0,
+    peopleNames: '',
+    physicalDescript: '',
+    needsDescript: '',
+    tags: [],
+    name: '',
+    org: '',
+    selfDescript: '',
+    email: '',
+    phone: '',
+    agreement: false
   };
 
   onSubmit = async e => {
@@ -34,6 +47,7 @@ class Form extends Component {
     const { message } = this.state;
     return (
     <> 
+        {/* <h1>{message}</h1> */}
         <form onSubmit={this.onSubmit}>
             <textarea type="text" placeholder="location" name="location" />
             <input type="date" placeholder="date" name="date" />
@@ -42,7 +56,7 @@ class Form extends Component {
             <textarea
                 type="text"
                 placeholder="pyshicalDescript"
-                name="pyshicalDescript"
+                name="physicalDescript"
             />
             <textarea type="text" placeholder="needsDescript" name="needsDescript" />
             <input type="text" placeholder="tags" name="tags" />
