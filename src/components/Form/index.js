@@ -21,7 +21,6 @@ class Form extends Component {
     physicalDescript: '',
     needsDescript: '',
     tags: [],
-    selectedDataSource: [],
     name: '',
     org: '',
     selfDescript: '',
