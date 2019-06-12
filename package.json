@@ -13,6 +13,7 @@
     "react": "^16.8.6",
     "react-bootstrap": "^1.0.0-beta.9",
     "react-datetime-bootstrap": "^1.4.5",
+    "react-datetimepicker-bootstrap": "^1.1.2",
     "react-dom": "^16.8.6",
     "react-geocode": "^0.1.2",
     "react-google-autocomplete": "^1.1.0",
@@ -21,7 +22,8 @@
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",
     "react-spinner": "^0.2.7",
-    "react-spinners": "^0.5.4"
+    "react-spinners": "^0.5.4",
+    "react-tag-buttons": "0.0.2"
   },
   "scripts": {
     "server": "node server.js",
