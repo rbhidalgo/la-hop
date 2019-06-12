@@ -8,3 +8,145 @@
 .table > *{
     text-align: center !important;
 }
+
+
+
+
+
+
+@media screen and (max-width: 640px) {
+/*********************************************************************/
+/*************************** SCALABLE GRID ***************************/
+/*********************************************************************/
+.grid-container {
+    width: 100vw;
+    min-height: 100vh;
+    display: grid;
+    position: relative;
+    grid-template-columns: 100vw;
+    grid-template-rows: 10px 53px 37px auto 5rem;
+  grid-template-areas:
+    ' breadcrumb '
+    ' header '
+    ' nav '
+    ' main '
+    ' footer ';
+     grid-gap: 0;
+  }
+  
+  .grid-mobile {
+      grid-area: breadcrumb;
+      width: 100vw;
+      position: fixed;
+      background-color: black;
+  }
+
+  .grid-header { 
+    grid-area: header; 
+    width: 100vw;
+    position: relative;
+    z-index: 10;
+    background-color: rgb(203, 63, 50);
+    color: white;
+  }
+  
+  .grid-header > div {
+    display: inline-block;
+    height: 53px;
+    font-size: 18px;
+    /* padding-top: .33125rem;
+    padding-bottom: .33125rem; */
+    margin-block-start:  0;
+    margin-block-end: 0;
+    font-family: "Open Sans",sans-serif;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #fff;
+      text-align: left;
+  }
+  
+  .grid-nav { 
+    grid-area: nav; 
+    position: relative;
+    text-align: center;
+    /* color: white; */
+    background-color: rgb(215, 84, 82);
+  }
+  
+  .grid-main { 
+    grid-area: main; 
+    position: relative;
+    background-color: transparent;
+  }
+  
+  .grid-footer { 
+    grid-area: footer; 
+    position: sticky;
+    background-color: transparent;
+  }
+  
+  
+  /*********************************************************************/
+  /*************************** NAVBAR BUTTON ***************************/
+  /*********************************************************************/
+  
+  .navBar {
+    /* background-color: orange; */
+    /* margin: 0; */
+    padding: 8px;
+  }
+  
+  .navBtn {
+    /* background-color: yellow; */
+    /* display: block; */
+    /* margin: 0; */
+    padding: 11px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .navBtn:hover {
+  background-color: darkgrey;
+  
+  }
+  
+  .active {
+    /* color: white; */
+    background-color: black;
+  }
+  
+  /* .headerBlack {
+    background-color: black;
+  } */
+  
+  .top-left {
+    width: 6vw;
+    float: left;
+    background-color: black;
+    
+  }
+  
+  .top-right {
+    /* width: 18.3vw; */
+    float: right;
+    background-color: black;
+  }
+  
+  .mid-left {
+    padding: 2px 11px;
+    width: 106px;
+    border-right: 1px white solid;
+    max-height: 33px;
+    margin-top: 10px !important;
+    
+  }
+  
+  .mid-right {
+    padding: 0 11px;
+    width: auto;
+  }
+  
+  /*********************************************************************/
+  /***************************  MEDIA QUERY  ***************************/
+  /*********************************************************************/
+}
