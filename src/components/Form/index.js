@@ -79,7 +79,7 @@ class Form extends Component {
             <input type="text" placeholder="peopleNames" name="peopleNames" onChange={this.changeHandler} value={peopleNames}/>
             <textarea
                 type="text"
-                placeholder="pyshicalDescript"
+                placeholder="physicalDescript"
                 name="physicalDescript"
                 onChange={this.changeHandler}
                 value={physicalDescript}
