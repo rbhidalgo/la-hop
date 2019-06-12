@@ -26,7 +26,7 @@ code {
   display: grid;
   position: relative;
   grid-template-columns: 100vw;
-  grid-template-rows: 4rem 4rem auto 5rem;
+  grid-template-rows: 53px 37px auto 5rem;
 grid-template-areas:
   ' header '
   ' nav '
@@ -40,25 +40,28 @@ grid-template-areas:
   width: 100vw;
   position: relative;
   z-index: 10;
-  background-color: skyblue;
+  background-color: rgb(203, 63, 50);
+  color: white;
 }
 
 .grid-nav { 
   grid-area: nav; 
   position: relative;
-  background-color: dodgerblue;
+  text-align: center;
+  /* color: white; */
+  background-color: rgb(215, 84, 82);
 }
 
 .grid-main { 
   grid-area: main; 
   position: relative;
-  background-color: lightblue;
+  background-color: transparent;
 }
 
 .grid-footer { 
   grid-area: footer; 
   position: sticky;
-  background-color: lightgray;
+  background-color: transparent;
 }
 
 
@@ -67,9 +70,34 @@ grid-template-areas:
 /*********************************************************************/
 
 .navBar {
-  background-color: orange;
+  /* background-color: orange; */
+  /* margin: 0; */
+  padding: 8px;
 }
 
 .navBtn {
-  background-color: yellow;
+  /* background-color: yellow; */
+  /* display: block; */
+  /* margin: 0; */
+  padding: 8px;
+  color: white;
+  text-decoration: none;
 }
+.navBtn:hover {
+  /* background-color: yellow; */
+  display: block;
+  padding: .5rem 1rem;
+  color: white;
+  text-decoration: none;
+}
+
+.active {
+  /* color: white; */
+  /* background-color: orange; */
+}
+
+
+/*********************************************************************/
+/***************************  MEDIA QUERY  ***************************/
+/*********************************************************************/
+@media screen and (max-width: 640px) {}
