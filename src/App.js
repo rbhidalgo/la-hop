@@ -6,8 +6,10 @@ import NavBar       from './components/Nav'
 import MapContainer from './components/MapContainer'
 import LearnMore    from './components/LearnMore'
 import Form         from './components/Form'
+import DatePicker   from './components/DatePicker'
 
 import * as routes  from './constants/routes'
+import './App.css'
 
 
 class App extends Component {
@@ -39,6 +41,7 @@ class App extends Component {
           }/>
           <Route exact path={routes.REQUEST} render={() => <>
             <MapContainer />
+            <DatePicker />
             <Form />
           </> }/>
           <Route exact path={routes.ROOT} render={() => <></> }/>
