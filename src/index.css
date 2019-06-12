@@ -85,10 +85,10 @@ grid-template-areas:
 }
 .navBtn:hover {
   /* background-color: yellow; */
-  display: block;
+  /* display: block;
   padding: .5rem 1rem;
   color: white;
-  text-decoration: none;
+  text-decoration: none; */
 }
 
 .active {
