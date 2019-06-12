@@ -3,7 +3,9 @@ import "react-step-progress-bar/styles.css";
 import { ProgressBar, Step } from "react-step-progress-bar";
 
 class StepProgressBar extends Component {
-
+    state = {
+        percent: 0
+    }
   render() {
     return (
         <ProgressBar percent={75}>
