@@ -40,3 +40,5 @@ class StepProgressBar extends React.Component {
     );
   }
 }
+
+export default StepProgressBar
