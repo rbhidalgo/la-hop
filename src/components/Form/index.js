@@ -22,6 +22,12 @@ class Form extends Component {
     agreement: false
   };
 
+  changeHandler = e => {
+    this.setState({
+      [e.target.name]: e.target.value
+    });
+  };
+
   onSubmit = async e => {
     e.preventDefault();
     const createTicket = await fetch("http://localhost:3001/ticket/create", {
@@ -49,22 +55,23 @@ class Form extends Component {
     <> 
         {/* <h1>{message}</h1> */}
         <form onSubmit={this.onSubmit}>
-            <textarea type="text" placeholder="location" name="location" />
-            <input type="date" placeholder="date" name="date" />
-            <input type="text" placeholder="peopleCount" name="peopleCount" />
-            <input type="text" placeholder="peopleNames" name="peopleNames" />
+            <textarea type="text" placeholder="location" name="location" onChange={this.changeHandler}/>
+            <input type="date" placeholder="date" name="date" onChange={this.changeHandler}/>
+            <input type="text" placeholder="peopleCount" name="peopleCount" onChange={this.changeHandler}/>
+            <input type="text" placeholder="peopleNames" name="peopleNames" onChange={this.changeHandler}/>
             <textarea
                 type="text"
                 placeholder="pyshicalDescript"
                 name="physicalDescript"
+                onChange={this.changeHandler}
             />
-            <textarea type="text" placeholder="needsDescript" name="needsDescript" />
+            <textarea type="text" placeholder="needsDescript" name="needsDescript" onChange={this.changeHandler}/>
             <input type="text" placeholder="tags" name="tags" />
-            <input type="text" placeholder="name" name="name" />
-            <input type="text" placeholder="org" name="org" />
-            <textarea type="text" placeholder="selfDescript" name="selfDescript" />
-            <input type="text" placeholder="email" name="email" />
-            <input type="text" placeholder="phone" name="phone" />
+            <input type="text" placeholder="name" name="name" onChange={this.changeHandler}/>
+            <input type="text" placeholder="org" name="org" onChange={this.changeHandler}/>
+            <textarea type="text" placeholder="selfDescript" name="selfDescript" onChange={this.changeHandler}/>
+            <input type="text" placeholder="email" name="email" onChange={this.changeHandler}/>
+            <input type="text" placeholder="phone" name="phone" onChange={this.changeHandler}/>
             <input type="checkbox" name="agreement" />
             <button type="submit">Submit</button>
         </form>
