@@ -7,9 +7,11 @@ import MapContainer from './components/MapContainer'
 import LearnMore    from './components/LearnMore'
 import Form         from './components/Form'
 import DatePicker   from './components/DatePicker'
+import Tags from './components/Tags'
 
 import * as routes  from './constants/routes'
 import './App.css'
+import 'react-tag-buttons/lib/css/styles.css'
 
 
 class App extends Component {
@@ -43,6 +45,7 @@ class App extends Component {
             <MapContainer />
             <DatePicker />
             <Form />
+            <Tags />
           </> }/>
           <Route exact path={routes.ROOT} render={() => <></> }/>
         </Switch>
