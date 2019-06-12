@@ -26,7 +26,7 @@ class App extends Component {
       <div className="grid-container">
 
         <div className="grid-header">
-          <div className="top-left"><img src=""></img></div>
+          <div className="top-left"><img src="grid_desktop.png"></img></div>
           <div className="mid-left">LAHSA</div><div className="mid-right">Los Angeles Homeless Outreach Portal Support</div>
           <div className="top-right"><img src="contact_desktop.png" /></div>
           {/* <PacmanLoader color={'gold'} size={10} /> */}
