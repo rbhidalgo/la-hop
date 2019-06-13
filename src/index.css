@@ -47,6 +47,43 @@ body {
   height: 22px;
 }
 
+/*********************************************************************/
+/************************* Request  Form *****************************/
+/*********************************************************************/
+
+ 
+.requestContainer {
+  display: inline-block;
+  width: 80vw;
+  margin: 0 10vw;
+  /* border: 1px solid #adadad; */
+  border-radius: 5px;
+}
+
+.requestContainer {
+    top: 0;
+
+    width: 80vw;
+    margin: 0 10vw;
+    /* margin: 1rem 5rem; */
+    display: inline-block;
+}
+
+.requestContainer > textarea, .requestContainer > input {
+  border: 1px solid #adadad;
+  border-radius: 5px;
+  display: inline-block;
+  width: 80vw;
+  height: 100px;
+  /* margin: 0 10vw; */
+}
+
+.continueButton {
+    width: 30vw;
+    margin: 20px 35vw;
+    color: white;
+    height: 36px;
+}
 
 /*********************************************************************/
 /*************************@  MOBILE DEVICE @**************************/

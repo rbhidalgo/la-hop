@@ -54,7 +54,7 @@ export class StepOne extends Component {
                 <Marker onClick={this.onMarkerClick} name={'Current location'} lat={this.state.lat} lng={this.state.lng}/>
               </Map>
             </div>
-            <div className="locationContainer">
+            <div className="requestContainer">
               Description of Location
               <br/>
               <textarea type="text" placeholder="location" name="location" onChange={this.props.changeHandler} value={this.props.location}/>
