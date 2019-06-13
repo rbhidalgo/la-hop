@@ -18,18 +18,19 @@ class NavBar extends Component {
 				timeout={300}
 				classNames='fade'>
                     <nav className='navbar-navigation'>
-    					<div className="nav-link">
+    					<div className="nav-link1">
                         <NavLink
 						to={routes.REQUEST}>
 						Make Request
 					</NavLink>
                     </div>
-                    <div className="nav-link">
+                    <div className="nav-link2">
 					<NavLink
 						to={routes.LEARN}>
 						Learn More
 					</NavLink>
                     </div>
+
 				</nav>
 			</CSSTransition>
 		);
