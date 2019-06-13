@@ -12,14 +12,14 @@ class StepThree extends Component {
                 <form>
                     <select value={this.props.selfDescript} name="selfDescript">
                         <option>Please select one</option>
-                        <option name="selfDescript" value="">Busines Owner</option>
-                        <option name="selfDescript" value="">Government Employee (City/County/State/Federal)/option>
-                        <option name="selfDescript" value="">Concerned Resident</option>
-                        <option name="selfDescript" value="">First Responder (e.g., Fire Department Law Enforcement)</option>
-                        <option name="selfDescript" value="">Homeless/Social Service Provider</option>
-                        <option name="selfDescript" value="">Self-Referral</option>
-                        <option name="selfDescript" value="">Elected Official</option>
-                        <option name="selfDescript" value="">Other</option>
+                        <option value="">Busines Owner</option>
+                        <option value="">Government Employee (City/County/State/Federal)/option>
+                        <option value="">Concerned Resident</option>
+                        <option value="">First Responder (e.g., Fire Department Law Enforcement)</option>
+                        <option value="">Homeless/Social Service Provider</option>
+                        <option value="">Self-Referral</option>
+                        <option value="">Elected Official</option>
+                        <option value="">Other</option>
                     </select>
                     <input type="text" placeholder="org" name="org" onChange={this.props.changeHandler} value={this.props.org}/>
                     <input type="text" placeholder="name" name="name" onChange={this.props.changeHandler} value={this.props.name}/>
