@@ -31,7 +31,8 @@ class App extends Component {
     selfDescript: '',
     email: '',
     phone: '',
-    agreement: false
+    agreement: false,
+    loading: true
   };
 
   render(){
