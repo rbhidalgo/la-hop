@@ -18,6 +18,22 @@ body {
 } */
 
 
+.google-covert {
+  color: rgb(173 173 173) !important;
+  width: 80vw !important;
+  margin: 0 auto !important;
+  border-radius: 5px !important;
+}
+
+.form-control .date-time {
+  text-align: center;
+  width: 80vw;
+  margin: 0 auto !important;
+  border-radius: 5px;
+  border: solid 1px #979797;}
+
+
+
 
 /*********************************************************************/
 /************************* Request  Form *****************************/
@@ -320,21 +336,6 @@ select {
   width: 79vw;
   margin: 0 auto;
 }
-
-.google-covert {
-  color: rgb(173 173 173) !important;
-  width: 80vw !important;
-  margin: 0 auto !important;
-  border-radius: 5px !important;
-}
-
-.form-control .date-time {
-  text-align: center;
-  width: 80vw;
-  margin: 0 auto !important;
-  border-radius: 5px;
-  border: solid 1px #979797;}
-
 
 
 
