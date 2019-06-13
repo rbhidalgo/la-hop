@@ -22,7 +22,7 @@ class StepTwo extends Component {
         return (
             <div>
                 {/* <h1>This is the StepTwo Component</h1> */}
-                <form>
+                <form className="stepTwoForm">
                     <div>
                         <h4>Date last seen</h4>
                         <DatePicker />
