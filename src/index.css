@@ -395,7 +395,7 @@ select {
     display: grid;
     position: relative;
     grid-template-columns: 100vw;
-    grid-template-rows: 53px 240px auto 5rem;
+    grid-template-rows: 53px 200px auto 5rem;
   grid-template-areas:
     ' desktop '
     ' logo '
@@ -505,7 +505,7 @@ select {
 
 .barContainer {
     width: 80vw;
-    margin: 100px 10vw 0 10vw;
+    margin: 20px 10vw 0 10vw;
     /* transform: scale(.6) */
 }
 /*********************************************************************/
