@@ -106,7 +106,7 @@ class StepTwo extends Component {
                     </div>
                     <br/>
                     <div className="tagContainer">
-                        <h4>What is needed? *</h4>
+                        <h4>What is needed? <span>*</span></h4>
                         <div className="tagRow1">
                             <div className="btnTag phoneTag" style={{backgroundColor: this.state.phone}} onClick={this.phoneClick}>Phone</div>
                             <div className="btnTag clothingTag" style={{backgroundColor: this.state.clothing}} onClick={this.clothingClick}>Clothing</div>
