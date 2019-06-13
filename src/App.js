@@ -42,9 +42,11 @@ class App extends Component {
           {/* <PacmanLoader color={'gold'} size={10} /> */}
         </div>
 
-        {/* <div className="grid-nav">
-          <NavBar loading={loading}/>
-        </div> */}
+        <div className="grid-logo">
+          <h1>LA - HOP</h1>
+          <h2>Homeless Outreach Portal</h2>
+          <span>LA-HOP is designed to assist people experiencing homelessness in LA County with outreach services.</span>
+        </div>
 
         <div className="grid-main">
         <Switch>

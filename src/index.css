@@ -17,25 +17,25 @@ code {
     monospace;
 }
 
-
-@media screen and (max-width: 640px) {
 /*********************************************************************/
 /**************************  MOBILE DEVICE ***************************/
 /*********************************************************************/
+@media screen and (max-width: 640px) {
 
-
+  /*********************************************************************/
+  /**************************  GRID CONTAINER **************************/
+  /*********************************************************************/
   .grid-container {
-  width: 100vw;
-  height: 100vh;
-  display: grid;
-  position: relative;
-  grid-template-columns: 100vw;
-  grid-template-rows: 40px 40px auto 5rem;
-  /* grid-template-rows: 24px 53px 37px auto 5rem; */
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    position: relative;
+    grid-template-columns: 100vw;
+    grid-template-rows: 40px 40px 140px auto 5rem;
   grid-template-areas:
   ' status '
   ' header '
-  /* ' nav ' */
+  ' logo '
   ' main '
   ' footer ';
     grid-gap: 0;
@@ -50,52 +50,69 @@ code {
     padding-top: 9px;
     background-color: black;
   }
+
   .grid-desktop { 
-    display: none}
+    display: none
+  }
 
   .grid-header { 
-  grid-area: header; 
-  width: 100vw;
-  position: relative;
-  z-index: 10;
-  background-color: rgb(203, 63, 50);
-  color: white;
+    grid-area: header; 
+    width: 100vw;
+    position: relative;
+    z-index: 10;
+    background-color: rgb(203, 63, 50);
+    color: white;
   }
 
   .grid-header > div {
-  display: inline-block;
-  /* height: 40px; */
-  /* font-size: 18px; */
-  /* padding-top: .33125rem;
-  padding-bottom: .33125rem; */
-  margin-block-start:  0;
-  margin-block-end: 0;
-  font-family: "Open Sans",sans-serif;
+    display: inline-block;
+    margin-block-start:  0;
+    margin-block-end: 0;
     font-weight: 400;
     line-height: 1.5;
     color: #fff;
     text-align: left;
-    /* min-width: 53px; */
   }
 
-  .grid-nav { 
-  grid-area: nav; 
-  position: relative;
-  text-align: center;
-  /* color: white; */
-  background-color: rgb(215, 84, 82);
+  .grid-logo { 
+    grid-area: logo; 
+    position: relative;
+    text-align: center;
   }
 
+  .grid-logo > h1 {
+    display: block;
+    font-size: 10vw;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+  }
+  .grid-logo > h2 {
+    display: block;
+    font-size: 7vw;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+  }
+
+  .grid-logo > span {
+    font-size: 4vw;
+  }
+  
   .grid-main { 
-  grid-area: main; 
-  position: relative;
-  background-color: transparent;
+    grid-area: main; 
+    position: relative;
+    background-color: transparent;
   }
 
   .grid-footer { 
-  grid-area: footer; 
-  position: sticky;
-  background-color: transparent;
+    grid-area: footer; 
+    position: sticky;
+    background-color: transparent;
   }
 
 
@@ -104,30 +121,27 @@ code {
   /*********************************************************************/
 
   .navBar {
-  padding: 8px;
+    padding: 8px;
   }
 
   .navBtn {
-  padding: 11px;
-  color: white;
-  text-decoration: none;
+    padding: 11px;
+    color: white;
+    text-decoration: none;
   }
 
   .navBtn:hover {
-  background-color: darkgrey;
-
+    background-color: darkgrey;
   }
 
   .active {
-  background-color: black;
+    background-color: black;
   }
 
-
   .top-left {
-  width: 6vw;
-  float: left;
-  background-color: black;
-
+    width: 6vw;
+    float: left;
+    background-color: black;
   }
 
   .top-right {
@@ -137,18 +151,14 @@ code {
     width: 100px;
     float: right;
     background-color: black;
-  /* width: 18.3vw; */
-  float: right;
-  background-color: black;
   }
 
   .mid-left {
-  padding: 2px 11px;
-  width: 106px;
-  /* border-right: 1px white solid; */
-  max-height: 33px;
-  margin-top: 10px !important;
-      margin-left: 10px;
+    padding: 2px 11px;
+    width: 106px;
+    max-height: 33px;
+    margin-top: 10px !important;
+    margin-left: 10px;
   }
 
   .mid-right {
@@ -173,7 +183,7 @@ code {
     grid-template-rows: 53px auto 5rem;
   grid-template-areas:
     ' desktop '
-    /* ' nav ' */
+    ' logo '
     ' main '
     ' footer ';
     grid-gap: 0;
@@ -204,11 +214,11 @@ code {
       text-align: left; */
   }
 
-  .grid-nav { 
-    grid-area: nav; 
+  .grid-logo { 
+    grid-area: logo; 
     position: relative;
     text-align: center;
-    background-color: rgb(215, 84, 82);
+    /* background-color: rgb(215, 84, 82); */
   }
 
   .grid-main { 
