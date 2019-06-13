@@ -2,7 +2,7 @@ import React, {Component }           from 'react';
 import { Switch, Route, withRouter } from 'react-router-dom'
 import { PacmanLoader }              from 'react-spinners'
 
-// import NavBar       from './components/Nav'
+import NavBar       from './components/Nav'
 import StepOne from './components/StepOne'
 import LearnMore    from './components/LearnMore'
 import DatePicker   from './components/DatePicker'
