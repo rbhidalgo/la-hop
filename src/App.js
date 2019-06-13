@@ -116,7 +116,7 @@ class App extends Component {
             <div className="barContainer">
             <StepProgressBar />
             </div>
-            <Form />
+            <Step1 changeHandler={this.changeHandler}/>
           </> }/>
           <Route exact path={routes.ROOT} render={() => <></> }/>
         </Switch>
