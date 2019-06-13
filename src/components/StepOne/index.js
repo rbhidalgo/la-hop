@@ -33,7 +33,7 @@ export class MapContainer extends Component {
    }
   return (
     <>
-    <div >
+ <h1>This is Step One</h1>
          <GoogleComponent
          
           apiKey={API_KEY}
@@ -44,7 +44,7 @@ export class MapContainer extends Component {
           // locationListStyle={'custom-style-list'}
           onChange={(e) => { this.setState({ lat: e.coordinates.lat, lng: e.coordinates.lng, address: e.place}) }} 
           onClick={this.currentLat}/>
-      </div>
+ 
      <Map google={this.props.google} zoom={12} initialCenter={{ lat: 34.0522, lng: -118.2437}} center= {{lat: this.state.lat, lng:this.state.lng}} style={{ height: '40%', width: '60%'}}>
      {/* center={{ lat: this.state.place.coordinates.lat, lng: this.state.place.coordinates.lng */}
       <Marker onClick={this.onMarkerClick}
