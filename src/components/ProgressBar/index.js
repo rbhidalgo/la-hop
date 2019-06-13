@@ -5,11 +5,6 @@ import { ProgressBar, Step } from "react-step-progress-bar";
 import './ProgressBar.css'
 
 class StepProgressBar extends Component {
-    state = {
-        percent: 0
-    }
-
-    
 
   render() {
     return (

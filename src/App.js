@@ -124,7 +124,7 @@ class App extends Component {
             <MapContainer changeHandler={this.changeHandler} location={this.state.location} changeProgress={this.changeProgress}/>
             {/* <DatePicker /> */}
             <div className="barContainer">
-            {/* <StepProgressBar /> */}
+            <StepProgressBar percent={this.state.percent}/>
             </div>
           </> }/>
           <Route exact path={routes.ROOT} render={() => <></> }/>
