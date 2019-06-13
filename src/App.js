@@ -95,9 +95,37 @@ class App extends Component {
     e.preventDefault()
     console.log('submitRequest function hit')
     this.setState({
-      stepTwo: false,
-      stepThree: true
+      stepThree: false,
+      confirmation: true
     })
+  }
+
+  goHome = (e) => {
+    e.preventDefault()
+    console.log("goHome function hit")
+    this.setState({
+      message: "",
+      location: '',
+      date: '',
+      peopleCount: 0,
+      peopleNames: '',
+      physicalDescript: '',
+      needsDescript: '',
+      tags: [],
+      name: '',
+      org: '',
+      selfDescript: '',
+      email: '',
+      phone: '',
+      agreement: false,
+      loading: true,
+      percent: 0,
+      stepOne: true,
+      stepTwo: false,
+      stepThree: false,
+      confirmation: false
+    })
+ 
   }
 
 
