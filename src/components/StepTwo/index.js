@@ -24,12 +24,13 @@ class StepTwo extends Component {
                 {/* <h1>This is the StepTwo Component</h1> */}
                 <form className="stepTwoForm">
                     <div>
-                        <h4>Date last seen</h4>
+                        <h4>Date last seen *</h4>
                         <DatePicker />
                     </div>
                     <br/>
                     <div>
-                        <input type="text" placeholder="peopleCount" name="peopleCount" onChange={this.props.changeHandler} value={this.props.peopleCount}/>
+                        <h4>Number of people *</h4>
+                        <input type="number" placeholder="peopleCount" name="peopleCount" onChange={this.props.changeHandler} value={this.props.peopleCount}/>
                     </div>
                     <br/>
                     <div>
