@@ -15,7 +15,7 @@ class Confirmation extends Component {
                 <br />
                 <p>Want to get more involved?</p>
                 <br />
-                <button>Volunteer</button>
+                <button className="volunteerButton">Volunteer</button>
             </div>
         )
     }
