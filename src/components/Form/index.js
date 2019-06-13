@@ -57,7 +57,7 @@ class Form extends Component {
                     selectedDataSource={tags}
                     onTagClick={this.onTagClick}
             />
-            <button type="submit">Submit</button>
+            <button type="submit" onClick={this.props.onSubmit}>Submit</button>
         </form>
   
     </>
