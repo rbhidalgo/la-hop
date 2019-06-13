@@ -1,0 +1,14 @@
+/* Container holding all of confirmation */
+
+.confirmationContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+    align-items: center; 
+}
+
+.confirmationParagraph {
+    width: 70vw;
+    margin: 0 15vw;
+    text-align: center;
+}

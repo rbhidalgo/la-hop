@@ -77,8 +77,20 @@ body {
     font-weight: 400;
 }
 
+
 .compensate {
   margin-left: 25vw !important;
+.volunteerButton {
+  width: 30vw;
+  margin: 20px 35vw;
+  color: white;
+  height: 36px;
+  background-color: white;
+  color: black;
+  border-color: #d95450;
+  border-radius: 5px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
 }
 
 select {
@@ -271,7 +283,7 @@ select {
   /*************************** NAVBAR BUTTON ***************************/
   /*********************************************************************/
 
-  /* .navBar {
+  .navBar {
     padding: 8px;
   }
 
@@ -287,7 +299,7 @@ select {
 
   .active {
     background-color: black;
-  } */
+  }
 
   /*********************************************************************/
   /*************************** HEADER BAR ******************************/
@@ -530,34 +542,34 @@ select {
 /*************************** NAVBAR BUTTON ***************************/
 /*********************************************************************/
 
-  /* .navBar {
+  .navBar {
     /* background-color: orange; */
     /* margin: 0; */
-    /* padding: 8px;
-  } */
+    padding: 8px;
+  }
 
-  /* .navBtn { */
+  .navBtn {
     /* background-color: yellow; */
     /* display: block; */
     /* margin: 0; */
-    /* padding: 11px;
+    padding: 11px;
     color: black;
     text-decoration: none;
-  } */
+  }
 
-  /* .navBtn:hover {
+  .navBtn:hover {
   background-color: darkgrey;
 
-  } */
+  }
 
-  /* .active {
+  .active {
     /* color: white; */
-    /* background-color: black;
-  }  */
+    background-color: black;
+  }
 
   /* .headerBlack {
     background-color: black;
-  } */ 
+  } */
 
   /*********************************************************************/
   /*************************** HEADER BAR ******************************/
@@ -595,3 +607,4 @@ select {
   }
 
 }
+
