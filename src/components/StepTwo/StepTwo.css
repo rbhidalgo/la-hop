@@ -13,7 +13,7 @@
     text-align: center
 }
 
-.btnTag:selected {
+.btnTag:active {
     background-color: rgba(217, 84, 80, 0.5);
 }
 

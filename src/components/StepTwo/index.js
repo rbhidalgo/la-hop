@@ -26,14 +26,55 @@ onTagClick={this.props.onTagClick}
 class StepTwo extends Component {
 
     state = {
-        bgColor: ''
+        clothing: '',
+        general: '',
+        mentalHealth: '',
+        id: '',
+        physicalHealth: '',
+        phone: '',
+        food: ''
     }
 
-    boxClick = (e) => {
+    clothingClick = (e) => {
         this.setState({
-          bgColor: 'rgba(217, 84, 80, 0.5)'
+          clothing: 'rgba(217, 84, 80, 0.5)'
         })
       }
+    
+    generalClick = (e) => {
+        this.setState({
+          general: 'rgba(217, 84, 80, 0.5)'
+        })
+      }
+    mentalHealthClick = (e) => {
+        this.setState({
+          mentalHealth: 'rgba(217, 84, 80, 0.5)'
+        })
+      }
+    idClick = (e) => {
+        this.setState({
+          id: 'rgba(217, 84, 80, 0.5)'
+        })
+      }
+    physicalHealthClick = (e) => {
+        this.setState({
+          physicalHealth: 'rgba(217, 84, 80, 0.5)'
+        })
+      }
+    phoneClick = (e) => {
+        this.setState({
+          phone: 'rgba(217, 84, 80, 0.5)'
+        })
+      }
+    foodClick = (e) => {
+        this.setState({
+          food: 'rgba(217, 84, 80, 0.5)'
+        })
+      }
+
+    toggle = e => {
+        e.currentTarget.classList.toggle('active');
+    }
 
     render() {
         return (
@@ -63,15 +104,15 @@ class StepTwo extends Component {
                     <div className="tagContainer">
                         <h4>What is needed? *</h4>
                         <div className="tagRow1">
-                            <div className="btnTag clothingTag" style={{backgroundColor: this.state.bgColor}} onClick={this.boxClick}>Clothing</div>
-                            <div className="btnTag generalTag" style={{backgroundColor: this.state.bgColor}} onClick={this.boxClick}>General Assistance</div>
-                            <div className="btnTag mentalTag" style={{backgroundColor: this.state.bgColor}} onClick={this.boxClick}>Mental Health Care</div>
+                            <div className="btnTag clothingTag" style={{backgroundColor: this.state.clothing}} onClick={this.clothingClick}>Clothing</div>
+                            <div className="btnTag generalTag" style={{backgroundColor: this.state.general}} onClick={this.generalClick}>General Assistance</div>
+                            <div className="btnTag mentalTag" style={{backgroundColor: this.state.mentalHealth}} onClick={this.mentalHealthClick}>Mental Health Care</div>
                         </div>
                         <div className="tagRow2">
-                            <div className="btnTag idTag" style={{backgroundColor: this.state.bgColor}} onClick={this.boxClick}>ID</div>
-                            <div className="btnTag physicalTag" style={{backgroundColor: this.state.bgColor}} onClick={this.boxClick}>Physical Healthcare</div>
-                            <div className="btnTag phoneTag" style={{backgroundColor: this.state.bgColor}} onClick={this.boxClick}>Phone</div>
-                            <div className="btnTag foodTag"style={{backgroundColor: this.state.bgColor}} onClick={this.boxClick}>Food</div>
+                            <div className="btnTag idTag" style={{backgroundColor: this.state.id}} onClick={this.idClick}>ID</div>
+                            <div className="btnTag physicalTag" style={{backgroundColor: this.state.physicalHealth}} onClick={this.physicalHealthClick}>Physical Healthcare</div>
+                            <div className="btnTag phoneTag" style={{backgroundColor: this.state.phone}} onClick={this.phoneClick}>Phone</div>
+                            <div className="btnTag foodTag" style={{backgroundColor: this.state.food}}onClick={this.foodClick}>Food</div>
                         </div>
                     </div>
                     <div>
