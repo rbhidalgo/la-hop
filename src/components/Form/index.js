@@ -25,7 +25,7 @@ class Form extends Component {
             
             
             <textarea type="text" placeholder="selfDescript" name="selfDescript" onChange={this.props.changeHandler} value={selfDescript}/>
-            <input type="text" placeholder="email" name="email" onChange={this.props.changeHandler} value={email}/>
+            
             <input type="text" placeholder="phone" name="phone" onChange={this.props.changeHandler} value={phone}/>
             <input type="checkbox" name="agreement" />
             
