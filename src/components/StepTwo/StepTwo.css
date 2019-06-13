@@ -10,7 +10,12 @@
     border-radius: 5px;
     border: solid 1px #979797;
     background: transparent;
-    text-align: center
+    text-align: center;
+    font-size: 11px;
+    padding: 3px;
+    margin: auto;
+    right: 0;
+    left: 0;
 }
 
 .btnTag:active {
@@ -18,71 +23,85 @@
 }
 
 .clothingTag {
-    width: 57px;
+    /* width: 57px;
     height: 24px;
     font-size: 9.5px;
     font-family: Montserrat;
     margin-right: 3px;
-    margin-bottom: 3px;
+    margin-bottom: 3px; */
+    padding: 3px 7px;
 }
 
 .generalTag {
-    width: 108px;
+    /* width: 108px;
     height: 24px;
     font-family: Montserrat;
     font-size: 9.5px;
-    margin-right: 3px;
-    margin-bottom: 3px;
+    margin-right: 3px; */
+    margin-left: 0;
+    padding: 3px 9px;
 }
 
 .mentalTag {
-    width: 107px;
+    /* width: 107px;
     height: 24px;
     font-family: Montserrat;
     font-size: 9.5px;
-    margin-bottom: 3px;
+    margin-bottom: 3px; */
+    padding: 3px 10px;
 }
 
 .idTag {
-    width: 46px;
+    /* width: 46px;
     height: 24px;
     font-family: Montserrat;
-    font-size: 9.5px;
-    margin-right: 3px;
+    font-size: 9.5px; */
+    margin-right: 0;
+    padding: 3px 13px;
 }
 
 .physicalTag {
-    width: 115px;
+    /* width: 115px;
     height: 24px;
     font-family: Montserrat;
     font-size: 9.5px;
-    margin-right: 3px;
+    margin-right: 3px; */
+    padding: 3px 7px;
 }
 
 .phoneTag {
-    width: 49px;
+    /* width: 49px;
     height: 24px;
     font-family: Montserrat;
-    font-size: 9.5px;
-    margin-right: 3px;
+    font-size: 9.5px;*/
+    /* margin-right: 3px;  */
+    margin-left: 0;
+    padding: 3px 7px;
 }
 
 .foodTag {
-    width: 59px;
+    /* width: 59px;
     height: 24px;
     font-family: Montserrat;
-    font-size: 9.5px;
+    font-size: 9.5px; */
+    margin-right: 0;
+    /* margin-left: 3px; */
+    padding: 3px 7px;
 }
 
 /* Container for tags */
 .tagContainer {
     display: flex;
     flex-direction: column;
+    /* text-align: justify; */
+    width: 80vw;
+    margin: 0 10vw;
 }
 
 /* First row of tags */
 .tagRow1 {
     display: flex;
+    margin-bottom: 6px;
 }
 
 .tagRow2 {

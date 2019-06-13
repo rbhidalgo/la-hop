@@ -85,10 +85,10 @@ class StepTwo extends Component {
             Tell us more about the person in need</span> 
           </div>
                 <form className="stepTwoForm requestContainer">
-                    <div>
+                  
                         <h4>Date last seen *</h4>
                         <DatePicker />
-                    </div>
+                   
                     <br/>
                     <div>
                         <h4>Number of people *</h4>
@@ -108,15 +108,15 @@ class StepTwo extends Component {
                     <div className="tagContainer">
                         <h4>What is needed? *</h4>
                         <div className="tagRow1">
+                            <div className="btnTag phoneTag" style={{backgroundColor: this.state.phone}} onClick={this.phoneClick}>Phone</div>
                             <div className="btnTag clothingTag" style={{backgroundColor: this.state.clothing}} onClick={this.clothingClick}>Clothing</div>
-                            <div className="btnTag generalTag" style={{backgroundColor: this.state.general}} onClick={this.generalClick}>General Assistance</div>
-                            <div className="btnTag mentalTag" style={{backgroundColor: this.state.mentalHealth}} onClick={this.mentalHealthClick}>Mental Health Care</div>
+                            <div className="btnTag physicalTag" style={{backgroundColor: this.state.physicalHealth}} onClick={this.physicalHealthClick}>Physical Healthcare</div>
+                            <div className="btnTag foodTag" style={{backgroundColor: this.state.food}}onClick={this.foodClick}>Food</div>
                         </div>
                         <div className="tagRow2">
+                            <div className="btnTag generalTag" style={{backgroundColor: this.state.general}} onClick={this.generalClick}>General Assistance</div>
+                            <div className="btnTag mentalTag" style={{backgroundColor: this.state.mentalHealth}} onClick={this.mentalHealthClick}>Mental Health Care</div>
                             <div className="btnTag idTag" style={{backgroundColor: this.state.id}} onClick={this.idClick}>ID</div>
-                            <div className="btnTag physicalTag" style={{backgroundColor: this.state.physicalHealth}} onClick={this.physicalHealthClick}>Physical Healthcare</div>
-                            <div className="btnTag phoneTag" style={{backgroundColor: this.state.phone}} onClick={this.phoneClick}>Phone</div>
-                            <div className="btnTag foodTag" style={{backgroundColor: this.state.food}}onClick={this.foodClick}>Food</div>
                         </div>
                     </div>
                     <div>
