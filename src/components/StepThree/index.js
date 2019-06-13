@@ -10,7 +10,7 @@ class StepThree extends Component {
             <div>
                 <h1>This is the StepThree Component</h1>
                 <form>
-                    <select>
+                    <select value={this.props.selfDescript} name="selfDescript">
                         <option>Please select one</option>
                         <option name="selfDescript" value="">Busines Owner</option>
                         <option name="selfDescript" value="">Government Employee (City/County/State/Federal)/option>
