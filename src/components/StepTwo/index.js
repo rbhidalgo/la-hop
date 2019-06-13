@@ -78,8 +78,12 @@ class StepTwo extends Component {
 
     render() {
         return (
-            <div className="">
-                {/* <h1>This is the StepTwo Component</h1> */}
+            <>
+          <div className="stepStatus">
+            <div>2</div>
+            <span>Request<br />
+            Tell us more about the person in need</span> 
+          </div>
                 <form className="stepTwoForm requestContainer">
                     <div>
                         <h4>Date last seen *</h4>
@@ -119,7 +123,7 @@ class StepTwo extends Component {
                         <button onClick={this.props.changeProgress} className="continueButton">Next Step</button>
                     </div>
                 </form>
-            </div>
+            </>
         )
     }
 }

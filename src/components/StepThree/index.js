@@ -28,8 +28,11 @@ class StepThree extends Component {
                     <input type="text" placeholder="name" name="name" onChange={this.props.changeHandler} value={this.props.name}/>
                     <input type="text" placeholder="email" name="email" onChange={this.props.changeHandler} value={this.props.email}/>
                     <input type="text" placeholder="phone" name="phone" onChange={this.props.changeHandler} value={this.props.phone}/>
-                    <input type="checkbox" name="agreement" />
-                    <Button type="submit" className="continueButton" onClick={this.props.onSubmit}>Continue</Button>
+                    <section>
+                        <input className="checkbox" type="checkbox" name="agreement" /><span>Have you seen <>"Learn More"</></span>
+                    </section>
+
+                    <button type="submit" className="continueButton" onClick={this.props.onSubmit}>Continue</button>
                 </form>
             </>
         )
