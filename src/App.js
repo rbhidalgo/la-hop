@@ -18,31 +18,16 @@ import 'react-tag-buttons/lib/css/styles.css'
 class App extends Component {
 
   state = {
-    loading: true
+    // loading: true
   }
 
   render(){
-    const { loading } = this.state
+    // const { loading } = this.state
 
     return(
 
       <div className="grid-container">
         <div className="grid-mobile"><img src="status_bar.png" /></div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
         <div className="grid-header">
           <div className="top-left"><img src="grid_mobile.png"></img></div>
           <div className="mid-left">LA-HOP</div><div className="mid-right"></div>
