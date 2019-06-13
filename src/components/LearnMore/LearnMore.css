@@ -1,0 +1,5 @@
+/* Parent container for LearnMore */
+.learnMoreContainer {
+    display: flex;
+    flex-direction: column;
+}
