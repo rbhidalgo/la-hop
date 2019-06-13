@@ -8,7 +8,7 @@ class LearnMore extends Component {
 
             <div>
                 <div>
-                    <img src="..../public/hearticon.png"></img>
+                    <img src="hearticon.png"></img>
                     <p>We’ll use the information from the requests made to dispatch a homeless services outreach team to the area.</p>
                 </div>
                 <div>
