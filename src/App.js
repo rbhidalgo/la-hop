@@ -8,6 +8,7 @@ import LearnMore    from './components/LearnMore'
 import Form         from './components/Form'
 import DatePicker   from './components/DatePicker'
 import StepProgressBar  from './components/ProgressBar'
+import Step1 from './component/Step1'
 
 
 import * as routes  from './constants/routes'
