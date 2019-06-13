@@ -9,6 +9,7 @@ class StepThree extends Component {
                 <form>
                     <input type="text" placeholder="org" name="org" onChange={this.props.changeHandler} value={this.props.org}/>
                     <input type="text" placeholder="name" name="name" onChange={this.props.changeHandler} value={this.props.name}/>
+                    <input type="text" placeholder="email" name="email" onChange={this.props.changeHandler} value={this.props.email}/>
                 </form>
             </div>
         )
