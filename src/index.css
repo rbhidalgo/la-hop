@@ -71,10 +71,6 @@ body {
     /* margin: 1rem 5rem; */
     display: inline-block;
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> master
 .requestContainer > input , .requestContainer > div > input {
   border: 1px solid #adadad;
   border-radius: 5px;
@@ -82,10 +78,6 @@ body {
   width: 80vw;
   height: 40px;
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> master
 .requestContainer > textarea, .requestContainer > div > textarea  {
   border: 1px solid #adadad;
   border-radius: 5px;
@@ -191,7 +183,6 @@ body {
   
   .grid-main { 
     grid-area: main; 
-    margin-top: 50px;
     position: relative;
     background-color: transparent;
   }
@@ -207,7 +198,7 @@ body {
   /*************************** NAVBAR BUTTON ***************************/
   /*********************************************************************/
 
-  /* .navBar {
+  .navBar {
     padding: 8px;
   }
 
@@ -223,7 +214,7 @@ body {
 
   .active {
     background-color: black;
-  } */
+  }
 
   /*********************************************************************/
   /*************************** HEADER BAR ******************************/
@@ -356,34 +347,34 @@ body {
 /*************************** NAVBAR BUTTON ***************************/
 /*********************************************************************/
 
-  /* .navBar {
+  .navBar {
     /* background-color: orange; */
     /* margin: 0; */
-    /* padding: 8px;
-  } */
+    padding: 8px;
+  }
 
-  /* .navBtn { */
+  .navBtn {
     /* background-color: yellow; */
     /* display: block; */
     /* margin: 0; */
-    /* padding: 11px;
+    padding: 11px;
     color: black;
     text-decoration: none;
-  } */
+  }
 
-  /* .navBtn:hover {
+  .navBtn:hover {
   background-color: darkgrey;
 
-  } */
+  }
 
-  /* .active {
+  .active {
     /* color: white; */
-    /* background-color: black;
-  }  */
+    background-color: black;
+  }
 
   /* .headerBlack {
     background-color: black;
-  } */ 
+  } */
 
   /*********************************************************************/
   /*************************** HEADER BAR ******************************/
@@ -421,3 +412,4 @@ body {
   }
 
 }
+
