@@ -18,11 +18,11 @@ import 'react-tag-buttons/lib/css/styles.css'
 class App extends Component {
 
   state = {
-    loading: true
+    // loading: true
   }
 
   render(){
-    const { loading } = this.state
+    // const { loading } = this.state
 
     return(
 
@@ -31,20 +31,22 @@ class App extends Component {
         <div className="grid-header">
           <div className="top-left"><img src="grid_mobile.png"></img></div>
           <div className="mid-left">LA-HOP</div><div className="mid-right"></div>
-          <div className="top-right"><img src="contact_mobile.png" /></div>
+          <div className="top-right">Contact</div>
           {/* <PacmanLoader color={'gold'} size={10} /> */}
         </div>
         <div className="grid-desktop">
           <div className="top-left"><img src="grid_desktop.png"></img></div>
           <div className="mid-left">LAHSA</div><div className="mid-right">Los Angeles Homeless Outreach Portal
         </div>
-          <div className="top-right"><img src="contact_desktop.png" /></div>
+        <div className="top-right">Contact</div>
           {/* <PacmanLoader color={'gold'} size={10} /> */}
         </div>
 
-        {/* <div className="grid-nav">
-          <NavBar loading={loading}/>
-        </div> */}
+        <div className="grid-logo">
+          <h1>LA - HOP</h1>
+          <h2>Homeless Outreach Portal</h2>
+          <span>LA-HOP is designed to assist people experiencing homelessness in LA County with outreach services.</span>
+        </div>
 
         <div className="grid-main">
         <Switch>
