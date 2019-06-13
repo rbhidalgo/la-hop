@@ -35,6 +35,12 @@ class App extends Component {
     loading: true
   };
 
+  changeHandler = e => {
+    this.setState({
+      [e.target.name]: e.target.value
+    });
+  };
+
   render(){
     const { loading } = this.state
 
