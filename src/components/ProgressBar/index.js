@@ -9,13 +9,7 @@ class StepProgressBar extends Component {
         percent: 0
     }
 
-    changeProgress = () => {
-        console.log("changeProgress function hit")
-        let currentNum = this.state.percent
-        this.setState({
-            percent: currentNum + 50
-        });
-    }
+    
 
   render() {
      const { percent } = this.state

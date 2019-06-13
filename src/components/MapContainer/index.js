@@ -51,6 +51,7 @@ export class MapContainer extends Component {
      </Map>
      <form>
         <textarea type="text" placeholder="location" name="location" onChange={this.props.changeHandler} value={this.props.location}/>
+        <button onClick={this.props.changeProgress}>Next Step</button>
     </form>
      </>
    );
