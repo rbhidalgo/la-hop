@@ -59,7 +59,7 @@ export class StepOne extends Component {
               <br/>
               <textarea type="text" placeholder="location" name="location" onChange={this.props.changeHandler} value={this.props.location}/>
             </div>
-              <Button className="continueButton" onClick={this.props.changeProgress}>Continue</Button>
+              <button className="continueButton" onClick={this.props.changeProgress}>Continue</button>
         </div>
       
       </form>

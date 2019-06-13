@@ -31,7 +31,7 @@ body {
 .stepStatus > span {
   display: inline-block;
   float: right;
-  padding: 5px;
+  padding: 5px 0 0 6px;
   width: 75vw;
   text-align: left;
   /* margin-top: 20px; */
@@ -54,45 +54,38 @@ body {
 /************************* Request  Form *****************************/
 /*********************************************************************/
 
- 
-.requestContainer {
-  display: inline-block;
-  width: 80vw;
-  margin: 0 10vw;
-  /* border: 1px solid #adadad; */
-  border-radius: 5px;
-}
-
 .requestContainer {
     top: 0;
-
     width: 80vw;
     margin: 0 10vw;
-    /* margin: 1rem 5rem; */
-    display: inline-block;
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> master
-.requestContainer > input , .requestContainer > div > input {
+.requestContainer > textarea, .requestContainer > div > textarea, .requestContainer > input, .requestContainer > div > input {
   border: 1px solid #adadad;
   border-radius: 5px;
   display: inline-block;
   width: 80vw;
+}
+
+.requestContainer > input, .requestContainer > div > input {
   height: 40px;
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> master
-.requestContainer > textarea, .requestContainer > div > textarea  {
-  border: 1px solid #adadad;
-  border-radius: 5px;
-  display: inline-block;
-  width: 80vw;
+.requestContainer > textarea, .requestContainer > div > textarea {
   height: 100px;
-  /* margin: 0 10vw; */
+}
+
+.requestContainer > section {
+  width: 80vw;
+  margin: 0 10vw;
+}
+
+.requestContainer > section > input, .requestContainer > section > span {
+  display: inline-block;
+  padding: 10px 5px;
+}
+
+.checkbox {
+  max-height: 22px;
 }
 
 .continueButton {
@@ -100,6 +93,11 @@ body {
     margin: 20px 35vw;
     color: white;
     height: 36px;
+    background-color: rgba(215, 85, 83, 1);
+    color: black;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
 }
 
 /*********************************************************************/
