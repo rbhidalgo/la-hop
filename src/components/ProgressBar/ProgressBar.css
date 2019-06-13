@@ -23,7 +23,7 @@
   }
 
   .barContainer {
-      max-width: 80vw;
-      margin-left: 10vw;
-      margin-top: 60px;
+      width: 80vw;
+      margin: 10px 10vw 0 10vw;
+      transform: scale(.6)
   }

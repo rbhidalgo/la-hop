@@ -148,10 +148,9 @@ class App extends Component {
             <div className="barContainer">
             <StepProgressBar percent={this.state.percent}/>
             <br />
-
+            <br />
             </div>
-            <hr />
-            <hr />
+
             
             <StepOne changeHandler={this.changeHandler} location={this.state.location} changeProgress={this.changeProgress}/>
 
