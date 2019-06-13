@@ -9,6 +9,7 @@ import Form         from './components/Form'
 import DatePicker   from './components/DatePicker'
 import StepProgressBar  from './components/ProgressBar'
 import StepTwo from './components/StepTwo'
+import StepThree from './components/StepThree'
 
 
 
@@ -142,7 +143,8 @@ onTagClick = (currSelectedState, id, text) => {
             <div className="barContainer">
             {/* <StepProgressBar percent={this.state.percent}/> */}
             </div>
-            <StepTwo onTagClick={this.onTagClick} tags={this.state.tags} peopleCount={this.state.peopleCount} peopleNames={this.state.peopleNames} changeHandler={this.changeHandler} physicalDescript={this.state.physicalDescript} changeProgress={this.changeProgress}/>
+            {/* <StepTwo onTagClick={this.onTagClick} tags={this.state.tags} peopleCount={this.state.peopleCount} peopleNames={this.state.peopleNames} changeHandler={this.changeHandler} physicalDescript={this.state.physicalDescript} changeProgress={this.changeProgress}/> */}
+            <StepThree />
           </> }/>
           <Route exact path={routes.ROOT} render={() => <></> }/>
         </Switch>
