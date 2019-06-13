@@ -12,10 +12,9 @@ class StepProgressBar extends Component {
     
 
   render() {
-     const { percent } = this.state
     return (
         <div>
-        <ProgressBar percent={percent}>
+        <ProgressBar percent={this.props.percent}>
         <Step>
           {({ accomplished, index }) => (
             <div
@@ -44,7 +43,7 @@ class StepProgressBar extends Component {
           )}
         </Step>
       </ProgressBar>
-      <button onClick={this.changeProgress}>Next Step</button>
+      
       </div>
     );
   }

@@ -33,7 +33,8 @@ class App extends Component {
     email: '',
     phone: '',
     agreement: false,
-    loading: true
+    loading: true,
+    percent: 0
   };
 
   changeHandler = e => {
@@ -120,7 +121,7 @@ class App extends Component {
             <LearnMore />
           }/>
           <Route exact path={routes.REQUEST} render={() => <>
-            <MapContainer changeHandler={this.changeHandler} location={this.state.location}/>
+            <MapContainer changeHandler={this.changeHandler} location={this.state.location} changeProgress={this.changeProgress}/>
             {/* <DatePicker /> */}
             <div className="barContainer">
             {/* <StepProgressBar /> */}
