@@ -1,6 +1,6 @@
-import React, {Component }           from 'react';
+import React, { Component } from 'react';
 import { Switch, Route, withRouter } from 'react-router-dom'
-import { PacmanLoader }              from 'react-spinners'
+import { PacmanLoader } from 'react-spinners'
 
 import NavBar       from './components/Nav'
 import StepOne from './components/StepOne'
@@ -12,7 +12,7 @@ import StepThree from './components/StepThree'
 
 
 
-import * as routes  from './constants/routes'
+import * as routes from './constants/routes'
 import './App.css'
 import 'react-tag-buttons/lib/css/styles.css'
 // import NavBar from './components/Nav';
@@ -51,65 +51,65 @@ class App extends Component {
     console.log("changeProgress function hit")
     let currentNum = this.state.percent
     this.setState({
-        percent: currentNum + 50
+      percent: currentNum + 50
     });
-}
-
-onTagClick = (currSelectedState, id, text) => {
-  let {tags} = this.state;
-  if(!currSelectedState){
-      tags.push({id:id, text:text});
-  }else{
-      tags = tags.filter((item)=>{return item.id !== id});
-    // loading: true
   }
-  this.setState({
+
+  onTagClick = (currSelectedState, id, text) => {
+    let { tags } = this.state;
+    if (!currSelectedState) {
+      tags.push({ id: id, text: text });
+    } else {
+      tags = tags.filter((item) => { return item.id !== id });
+      // loading: true
+    }
+    this.setState({
       tags: tags
-  });
-};
+    });
+  };
 
   onSubmit = async e => {
     e.preventDefault();
-    try{
-        const createTicket = await fetch("http://localhost:3001/ticket/create", {
-            method: "POST",
-            // credentials: "include",
-            body: JSON.stringify(this.state),
-            headers: {
-              "Content-Type": "application/json"
-            }
-          });
-          const parsedResponse = await createTicket.json();
-          if (parsedResponse.success) {
-            // setting localStorage on front end so user remains logged in
-            // logout = localStorage.clear()
-            // and clear sessions in back
-            this.setState({
-              message: parsedResponse.message,
-              location: '',
-              date: '',
-              peopleCount: 0,
-              peopleNames: '',
-              physicalDescript: '',
-              needsDescript: '',
-              tags: [],
-              name: '',
-              org: '',
-              selfDescript: '',
-              email: '',
-              phone: '',
-              agreement: false
-            });
-          } 
-    } catch(err) {
-        console.log(err)
+    try {
+      const createTicket = await fetch("http://localhost:3001/ticket/create", {
+        method: "POST",
+        // credentials: "include",
+        body: JSON.stringify(this.state),
+        headers: {
+          "Content-Type": "application/json"
+        }
+      });
+      const parsedResponse = await createTicket.json();
+      if (parsedResponse.success) {
+        // setting localStorage on front end so user remains logged in
+        // logout = localStorage.clear()
+        // and clear sessions in back
+        this.setState({
+          message: parsedResponse.message,
+          location: '',
+          date: '',
+          peopleCount: 0,
+          peopleNames: '',
+          physicalDescript: '',
+          needsDescript: '',
+          tags: [],
+          name: '',
+          org: '',
+          selfDescript: '',
+          email: '',
+          phone: '',
+          agreement: false
+        });
+      }
+    } catch (err) {
+      console.log(err)
     }
   };
 
-  render(){
-    // const { loading } = this.state
+  render() {
+    // const { showStep } = this.state
 
-    return(
+    return (
 
       <div className="grid-container">
         <div className="grid-mobile"><img src="status_bar.png" /></div>
@@ -123,7 +123,7 @@ onTagClick = (currSelectedState, id, text) => {
           <div className="top-left"><img src="grid_desktop.png"></img></div>
           <div className="mid-left">LAHSA</div><div className="mid-right">Los Angeles Homeless Outreach Portal
         </div>
-        <div className="top-right">Contact</div>
+          <div className="top-right">Contact</div>
           {/* <PacmanLoader color={'gold'} size={10} /> */}
         </div>
 
@@ -140,7 +140,7 @@ onTagClick = (currSelectedState, id, text) => {
             <LearnMore />
           }/>
           <Route exact path={routes.REQUEST} render={() => <>
-          <h1>REQUEST PLACE HOLDER</h1>
+          <h1 style={{marginTop: "40px"}}>REQUEST PLACE HOLDER</h1>
           </> }/>
           <Route exact path={routes.ROOT} render={() => <>
 

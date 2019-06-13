@@ -15,14 +15,14 @@ export class StepOne extends Component {
     address: ''
   }
 
-  currentLat = () => {
-    let searchlat = this.state.place.coordinates.lat
-    let searchlng = this.state.place.coordinates.lng
-    this.setState({
-      lat: searchlat,
-      lng: searchlng
-    })
-  }
+	currentLat = () => {
+		let searchlat = this.state.place.coordinates.lat;
+		let searchlng = this.state.place.coordinates.lng;
+		this.setState({
+			lat: searchlat,
+			lng: searchlng
+		});
+	};
 
   
  render() {

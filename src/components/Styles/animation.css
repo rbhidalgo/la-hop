@@ -1,0 +1,80 @@
+.navbar-navigation a {
+    color: #000000;
+    text-decoration: none;
+  }
+
+.navbar-navigation {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-link1, .nav-link2 {
+    flex: 1;
+    margin: 25px 0;
+    font-family: Montserrat;
+  font-size: 15.1px;
+  font-weight: 400;
+  color: black;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #000;
+}
+
+/* .nav-link2 {
+    flex: 1;
+    margin: 25px 0;
+    font-family: Montserrat;
+  font-size: 15.1px;
+  font-weight: 400;
+  color: black;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #000;
+} */
+
+.nav-link1 a:hover, a:focus {
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
+    padding-bottom: 5px;
+    /* border-bottom: 2px solid #000; */
+}
+
+
+.nav-link2 a:hover, a:focus {
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
+    padding-bottom: 5px;
+    /* border-bottom: 2px solid #000; */
+}
+
+.fade-appear {
+    opacity: 0;
+    z-index: 1;
+}
+
+.fade-appear.fade-appear-active {
+    opacity: 1;
+    transition: opacity 300ms linear;
+}
+
+.fade-enter {
+    opacity: 0;
+    z-index: 1;
+}
+
+.fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 300ms linear;
+}
+
+hr {
+    width: 80%;
+    height: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:#666;
+    border: 0 none;
+    margin-top: 100px;
+    margin-bottom:100px;
+    }
+
