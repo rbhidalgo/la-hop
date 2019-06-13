@@ -69,7 +69,15 @@ body {
     display: inline-block;
 }
 
-.requestContainer > textarea, .requestContainer > input {
+.requestContainer > input , .requestContainer > div > input {
+  border: 1px solid #adadad;
+  border-radius: 5px;
+  display: inline-block;
+  width: 80vw;
+  height: 40px;
+}
+
+.requestContainer > textarea, .requestContainer > div > textarea  {
   border: 1px solid #adadad;
   border-radius: 5px;
   display: inline-block;

@@ -6,9 +6,13 @@ class StepThree extends Component {
 
     render() {
         return (
-            <div>
-                <h1>This is the StepThree Component</h1>
-                <form>
+            <>
+            <div className="stepStatus">
+                <div>3</div>
+                <span>Your Info<br />
+                Tell us more about you</span>
+            </div>
+                <form className="requestContainer">
                     <select onChange={this.props.changeHandler} value={this.props.selfDescript} name="selfDescript">
                         <option>Please select one</option>
                         <option value="Business Owner">Business Owner</option>
@@ -25,9 +29,9 @@ class StepThree extends Component {
                     <input type="text" placeholder="email" name="email" onChange={this.props.changeHandler} value={this.props.email}/>
                     <input type="text" placeholder="phone" name="phone" onChange={this.props.changeHandler} value={this.props.phone}/>
                     <input type="checkbox" name="agreement" />
-                    <Button type="submit" onClick={this.props.onSubmit}>Submit Request</Button>
+                    <Button type="submit" className="continueButton" onClick={this.props.onSubmit}>Continue</Button>
                 </form>
-            </div>
+            </>
         )
     }
 }
