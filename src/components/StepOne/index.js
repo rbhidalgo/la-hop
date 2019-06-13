@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
-import {Map, Marker, GoogleApiWrapper, GroundOverlay} from 'google-maps-react';
+import {Map, Marker, GoogleApiWrapper} from 'google-maps-react';
 import { GoogleComponent } from 'react-google-location' 
 import Button from '../Styles/Button'
+
+import './StepOne.css'
 
 const API_KEY = "AIzaSyDvWu69XjuxqaUQnd8ZWDl7QEtEQUwNRFY"
 
@@ -24,15 +26,10 @@ export class StepOne extends Component {
 
   
  render() {
-   console.log(this.state.address)
-   { this.state.place == null 
-   ? console.log(this.state.place, "true")
-   : (console.log(this.state.place, "lat"))
-    // (console.log(this.state.place.coordinates.lng, "lng"))
 
-   }
   return (
     <>
+<<<<<<< HEAD
  <h1>This is Step One</h1>
          <GoogleComponent
          
@@ -56,6 +53,37 @@ export class StepOne extends Component {
     </form>
      </>
    );
+=======
+      <form>
+
+        <div className="stepOneContainer">
+          <div className="locatorContainer">
+            <GoogleComponent
+                apiKey={API_KEY}
+                language={'en'}
+                country={'country:us'}
+                coordinates={true}
+                onChange={(e) => { this.setState({ lat: e.coordinates.lat, lng: e.coordinates.lng, address: e.place}) }} 
+                onClick={this.currentLat}
+                />
+          </div>
+            <div className="mapContainer">
+              <Map google={this.props.google} zoom={12} initialCenter={{ lat: 34.0522, lng: -118.2437}} center= {{lat: this.state.lat, lng:this.state.lng}} style={{ height: '40%', width: '60%'}}>
+                <Marker onClick={this.onMarkerClick} name={'Current location'} lat={this.state.lat} lng={this.state.lng}/>
+              </Map>
+            </div>
+            <div className="locationContainer">
+              Description of Location
+              <br/>
+              <textarea type="text" placeholder="location" name="location" onChange={this.props.changeHandler} value={this.props.location}/>
+            </div>
+              <Button className="continueButton" onClick={this.props.changeProgress}>Continue</Button>
+        </div>
+      
+      </form>
+    </>
+  );
+>>>>>>> master
  }
 }
 
