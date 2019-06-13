@@ -23,7 +23,7 @@ class Form extends Component {
             
             
             <input type="text" placeholder="name" name="name" onChange={this.props.changeHandler} value={name}/>
-            <input type="text" placeholder="org" name="org" onChange={this.props.changeHandler} value={org}/>
+            
             <textarea type="text" placeholder="selfDescript" name="selfDescript" onChange={this.props.changeHandler} value={selfDescript}/>
             <input type="text" placeholder="email" name="email" onChange={this.props.changeHandler} value={email}/>
             <input type="text" placeholder="phone" name="phone" onChange={this.props.changeHandler} value={phone}/>
