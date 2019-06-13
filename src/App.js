@@ -146,7 +146,7 @@ onTagClick = (currSelectedState, id, text) => {
             <div className="barContainer">
             <StepProgressBar percent={this.state.percent}/>
             <br />
-            <div>(1) this will be where the progress bar updater will go.</div>
+
             </div>
             <hr />
             <hr />
