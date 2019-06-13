@@ -14,17 +14,7 @@ const tagsList = [
 class Form extends Component {
   
 
-  onTagClick = (currSelectedState, id, text) => {
-    let {tags} = this.state;
-    if(!currSelectedState){
-        tags.push({id:id, text:text});
-    }else{
-        tags = tags.filter((item)=>{return item.id !== id});
-    }
-    this.setState({
-        tags: tags
-    });
-};
+  
 
 
   render() {
@@ -33,17 +23,10 @@ class Form extends Component {
     <> 
         <h1>{message}</h1>
         <form onSubmit={this.props.onSubmit}>
-            <input type="text" placeholder="peopleCount" name="peopleCount" onChange={this.props.changeHandler} value={peopleCount}/>
-            <input type="text" placeholder="peopleNames" name="peopleNames" onChange={this.props.changeHandler} value={peopleNames}/>
-            <textarea
-                type="text"
-                placeholder="physicalDescript"
-                name="physicalDescript"
-                onChange={this.props.changeHandler}
-                value={physicalDescript}
-            />
-            <textarea type="text" placeholder="needsDescript" name="needsDescript" onChange={this.props.changeHandler} value={needsDescript}/>
-            <input type="text" placeholder="tags" name="tags"/>
+            
+            
+            
+            
             <input type="text" placeholder="name" name="name" onChange={this.props.changeHandler} value={name}/>
             <input type="text" placeholder="org" name="org" onChange={this.props.changeHandler} value={org}/>
             <textarea type="text" placeholder="selfDescript" name="selfDescript" onChange={this.props.changeHandler} value={selfDescript}/>
@@ -53,7 +36,7 @@ class Form extends Component {
             <TagButtons
                     dataSource={tagsList}
                     selectedDataSource={tags}
-                    onTagClick={this.onTagClick}
+                    onTagClick={this.props.onTagClick}
             />
             <button type="submit" onClick={this.props.onSubmit}>Submit</button>
         </form>

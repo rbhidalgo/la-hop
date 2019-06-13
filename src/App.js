@@ -139,6 +139,7 @@ onTagClick = (currSelectedState, id, text) => {
             <div className="barContainer">
             {/* <StepProgressBar percent={this.state.percent}/> */}
             </div>
+            <StepTwo onTagClick={this.onTagClick} tags={this.state.tags} peopleCount={this.state.peopleCount} peopleNames={this.state.peopleNames} changeHandler={this.changeHandler}/>
           </> }/>
           <Route exact path={routes.ROOT} render={() => <></> }/>
         </Switch>
