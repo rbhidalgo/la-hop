@@ -53,6 +53,18 @@ class App extends Component {
     });
 }
 
+onTagClick = (currSelectedState, id, text) => {
+  let {tags} = this.state;
+  if(!currSelectedState){
+      tags.push({id:id, text:text});
+  }else{
+      tags = tags.filter((item)=>{return item.id !== id});
+  }
+  this.setState({
+      tags: tags
+  });
+};
+
   onSubmit = async e => {
     e.preventDefault();
     try{
