@@ -27,7 +27,7 @@ class StepTwo extends Component {
                     selectedDataSource={this.props.tags}
                     onTagClick={this.props.onTagClick}
                     />
-                    <button onClick={this.props.changeProgress}>Next Step</button>
+                    <Button onClick={this.props.changeProgress}>Next Step</Button>
                 </form>
             </div>
         )

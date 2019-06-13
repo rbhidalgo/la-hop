@@ -45,11 +45,11 @@ export class MapContainer extends Component {
           onChange={(e) => { this.setState({ lat: e.coordinates.lat, lng: e.coordinates.lng, address: e.place}) }} 
           onClick={this.currentLat}/>
       </div>
-     {/* <Map google={this.props.google} zoom={12} initialCenter={{ lat: 34.0522, lng: -118.2437}} center= {{lat: this.state.lat, lng:this.state.lng}} style={{ height: '40%', width: '60%'}}>
+     <Map google={this.props.google} zoom={12} initialCenter={{ lat: 34.0522, lng: -118.2437}} center= {{lat: this.state.lat, lng:this.state.lng}} style={{ height: '40%', width: '60%'}}>
      {/* center={{ lat: this.state.place.coordinates.lat, lng: this.state.place.coordinates.lng */}
-    {/* <Marker onClick={this.onMarkerClick} */}
-               {/* name={'Current location'} lat={this.state.lat} lng={this.state.lng}/> */}
-     {/* </Map> */} 
+      <Marker onClick={this.onMarkerClick}
+               name={'Current location'} lat={this.state.lat} lng={this.state.lng}/>
+     </Map>
      <form>
         <textarea type="text" placeholder="location" name="location" onChange={this.props.changeHandler} value={this.props.location}/>
         <Button onClick={this.props.changeProgress}>Next Step</Button>
