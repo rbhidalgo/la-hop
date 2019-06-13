@@ -6,7 +6,6 @@ import { CSSTransition } from 'react-transition-group'
 import NavBar       from './components/Nav'
 import StepOne from './components/StepOne'
 import LearnMore    from './components/LearnMore'
-// import Form         from './components/Form'
 import DatePicker   from './components/DatePicker'
 import StepProgressBar  from './components/ProgressBar'
 import StepTwo from './components/StepTwo'
@@ -17,6 +16,7 @@ import StepThree from './components/StepThree'
 import * as routes from './constants/routes'
 import './App.css'
 import 'react-tag-buttons/lib/css/styles.css'
+// import NavBar from './components/Nav';
 
 
 class App extends Component {
@@ -132,22 +132,34 @@ class App extends Component {
           <h1>LA - HOP</h1>
           <h2>Homeless Outreach Portal</h2>
           <span>LA-HOP is designed to assist people experiencing homelessness in LA County with outreach services.</span>
+          <NavBar />
         </div>
 
         <div className="grid-main">
         <Switch>
-          <Route exact path={routes.INFO} render={() =>
+          <Route exact path={routes.LEARN} render={() =>
             <LearnMore />
           }/>
           <Route exact path={routes.REQUEST} render={() => <>
-            {/* <StepOne changeHandler={this.changeHandler} location={this.state.location} changeProgress={this.changeProgress}/> */}
-            <div className="barContainer">
-            {/* <StepProgressBar percent={this.state.percent}/> */}
-            </div>
-            <StepTwo onTagClick={this.onTagClick} tags={this.state.tags} peopleCount={this.state.peopleCount} peopleNames={this.state.peopleNames} changeHandler={this.changeHandler} physicalDescript={this.state.physicalDescript} changeProgress={this.changeProgress}/>
-            {/* <StepThree org={this.state.org} changeHandler={this.changeHandler} name={this.state.name} email={this.state.email} phone={this.state.phone} onSubmit={this.onSubmit} /> */}
+          <h1>REQUEST PLACE HOLDER</h1>
           </> }/>
-          <Route exact path={routes.ROOT} render={() => <></> }/>
+          <Route exact path={routes.ROOT} render={() => <>
+
+            <div className="barContainer">
+            <StepProgressBar percent={this.state.percent}/>
+            <br />
+            <div>(1) this will be where the progress bar updater will go.</div>
+            </div>
+            <hr />
+            <hr />
+            
+            <StepOne changeHandler={this.changeHandler} location={this.state.location} changeProgress={this.changeProgress}/>
+
+            <StepTwo onTagClick={this.onTagClick} tags={this.state.tags} peopleCount={this.state.peopleCount} peopleNames={this.state.peopleNames} changeHandler={this.changeHandler} physicalDescript={this.state.physicalDescript} changeProgress={this.changeProgress}/>
+            
+            <StepThree org={this.state.org} changeHandler={this.changeHandler} name={this.state.name} email={this.state.email} phone={this.state.phone} onSubmit={this.onSubmit} />
+
+          </> }/>
         </Switch>
         </div>
 
