@@ -8,7 +8,8 @@ export class MapContainer extends Component {
   state = {
     place: null,
     lat: 34.0522,
-    lng: -118.2437
+    lng: -118.2437,
+    address: ''
   }
 
   currentLat = () => {
@@ -22,6 +23,7 @@ export class MapContainer extends Component {
 
   
  render() {
+   console.log(this.state.address)
    { this.state.place == null 
    ? console.log(this.state.place, "true")
    : (console.log(this.state.place, "lat"))
@@ -39,7 +41,7 @@ export class MapContainer extends Component {
           coordinates={true}
           // locationBoxStyle={'custom-style'}
           // locationListStyle={'custom-style-list'}
-          onChange={(e) => { this.setState({ lat: e.coordinates.lat, lng: e.coordinates.lng}) }} 
+          onChange={(e) => { this.setState({ lat: e.coordinates.lat, lng: e.coordinates.lng, address: e.place}) }} 
           onClick={this.currentLat}/>
       </div>
      <Map google={this.props.google} zoom={12} initialCenter={{ lat: 34.0522, lng: -118.2437}} center= {{lat: this.state.lat, lng:this.state.lng}} style={{ height: '40%', width: '60%'}}>
