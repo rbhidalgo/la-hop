@@ -73,6 +73,14 @@ class App extends Component {
     });
   };
 
+  stepOneClick = () => {
+    console.log('stepOneClick function hit')
+    this.setState({
+      stepOne: false,
+      stepTwo: true
+    })
+  }
+
   onSubmit = async e => {
     e.preventDefault();
     try {
