@@ -139,7 +139,6 @@ onTagClick = (currSelectedState, id, text) => {
           }/>
           <Route exact path={routes.REQUEST} render={() => <>
             {/* <StepOne changeHandler={this.changeHandler} location={this.state.location} changeProgress={this.changeProgress}/> */}
-            {/* <DatePicker /> */}
             <div className="barContainer">
             {/* <StepProgressBar percent={this.state.percent}/> */}
             </div>

@@ -20,6 +20,7 @@ class StepTwo extends Component {
             <div>
                 <h1>This is the StepTwo Component</h1>
                 <form>
+                    <DatePicker />
                     <input type="text" placeholder="peopleCount" name="peopleCount" onChange={this.props.changeHandler} value={this.props.peopleCount}/>
                     <input type="text" placeholder="peopleNames" name="peopleNames" onChange={this.props.changeHandler} value={this.props.peopleNames}/>
                     <textarea type="text" placeholder="physicalDescript" name="physicalDescript" onChange={this.props.changeHandler} value={this.props.physicalDescript}/>
