@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {Map, Marker, GoogleApiWrapper, GroundOverlay} from 'google-maps-react';
 import { GoogleComponent } from 'react-google-location' 
+import Button from '../Styles/Button'
 
 const API_KEY = "AIzaSyDvWu69XjuxqaUQnd8ZWDl7QEtEQUwNRFY"
 
@@ -51,7 +52,7 @@ export class MapContainer extends Component {
      </Map>
      <form>
         <textarea type="text" placeholder="location" name="location" onChange={this.props.changeHandler} value={this.props.location}/>
-        <button onClick={this.props.changeProgress}>Next Step</button>
+        <Button><button onClick={this.props.changeProgress}>Next Step</button></Button>
     </form>
      </>
    );
