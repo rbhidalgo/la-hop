@@ -12,22 +12,7 @@ const tagsList = [
 ];
 
 class Form extends Component {
-  state = {
-    message: "",
-    location: '',
-    date: '',
-    peopleCount: 0,
-    peopleNames: '',
-    physicalDescript: '',
-    needsDescript: '',
-    tags: [],
-    name: '',
-    org: '',
-    selfDescript: '',
-    email: '',
-    phone: '',
-    agreement: false
-  };
+  
 
   onTagClick = (currSelectedState, id, text) => {
     let {tags} = this.state;

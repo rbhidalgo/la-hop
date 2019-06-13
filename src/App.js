@@ -18,8 +18,21 @@ import 'react-tag-buttons/lib/css/styles.css'
 class App extends Component {
 
   state = {
-    loading: true
-  }
+    message: "",
+    location: '',
+    date: '',
+    peopleCount: 0,
+    peopleNames: '',
+    physicalDescript: '',
+    needsDescript: '',
+    tags: [],
+    name: '',
+    org: '',
+    selfDescript: '',
+    email: '',
+    phone: '',
+    agreement: false
+  };
 
   render(){
     const { loading } = this.state
