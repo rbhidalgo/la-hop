@@ -3,7 +3,7 @@ import { Switch, Route, withRouter } from 'react-router-dom'
 import { PacmanLoader } from 'react-spinners'
 import { CSSTransition } from 'react-transition-group'
 
-import NavBar from './components/Nav'
+import NavBar       from './components/Nav'
 import StepOne from './components/StepOne'
 import LearnMore    from './components/LearnMore'
 // import Form         from './components/Form'
@@ -140,11 +140,11 @@ class App extends Component {
             <LearnMore />
           }/>
           <Route exact path={routes.REQUEST} render={() => <>
-            <StepOne changeHandler={this.changeHandler} location={this.state.location} changeProgress={this.changeProgress}/>
+            {/* <StepOne changeHandler={this.changeHandler} location={this.state.location} changeProgress={this.changeProgress}/> */}
             <div className="barContainer">
             {/* <StepProgressBar percent={this.state.percent}/> */}
             </div>
-            {/* <StepTwo onTagClick={this.onTagClick} tags={this.state.tags} peopleCount={this.state.peopleCount} peopleNames={this.state.peopleNames} changeHandler={this.changeHandler} physicalDescript={this.state.physicalDescript} changeProgress={this.changeProgress}/> */}
+            <StepTwo onTagClick={this.onTagClick} tags={this.state.tags} peopleCount={this.state.peopleCount} peopleNames={this.state.peopleNames} changeHandler={this.changeHandler} physicalDescript={this.state.physicalDescript} changeProgress={this.changeProgress}/>
             {/* <StepThree org={this.state.org} changeHandler={this.changeHandler} name={this.state.name} email={this.state.email} phone={this.state.phone} onSubmit={this.onSubmit} /> */}
           </> }/>
           <Route exact path={routes.ROOT} render={() => <></> }/>
