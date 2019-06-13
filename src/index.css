@@ -84,6 +84,12 @@ body {
   padding: 10px 5px;
 }
 
+.requestContainer > h4 {
+  width: 80vw;
+  margin: 5px 10vw;
+
+}
+
 .checkbox {
   max-height: 22px;
 }
@@ -94,7 +100,6 @@ body {
     color: white;
     height: 36px;
     background-color: rgba(215, 85, 83, 1);
-    color: black;
     border-radius: 5px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
