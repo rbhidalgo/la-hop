@@ -29,6 +29,7 @@
     font-family: Montserrat;
     margin-right: 3px;
     margin-bottom: 3px; */
+    padding: 3px 7px;
 }
 
 .generalTag {
@@ -36,8 +37,9 @@
     height: 24px;
     font-family: Montserrat;
     font-size: 9.5px;
-    margin-right: 3px;
-    margin-bottom: 3px; */
+    margin-right: 3px; */
+    margin-left: 0;
+    padding: 3px 9px;
 }
 
 .mentalTag {
@@ -46,14 +48,16 @@
     font-family: Montserrat;
     font-size: 9.5px;
     margin-bottom: 3px; */
+    padding: 3px 10px;
 }
 
 .idTag {
     /* width: 46px;
     height: 24px;
     font-family: Montserrat;
-    font-size: 9.5px;
-    margin-right: 3px; */
+    font-size: 9.5px; */
+    margin-right: 0;
+    padding: 3px 13px;
 }
 
 .physicalTag {
@@ -62,14 +66,17 @@
     font-family: Montserrat;
     font-size: 9.5px;
     margin-right: 3px; */
+    padding: 3px 7px;
 }
 
 .phoneTag {
     /* width: 49px;
     height: 24px;
     font-family: Montserrat;
-    font-size: 9.5px;
-    margin-right: 3px; */
+    font-size: 9.5px;*/
+    /* margin-right: 3px;  */
+    margin-left: 0;
+    padding: 3px 7px;
 }
 
 .foodTag {
@@ -77,6 +84,9 @@
     height: 24px;
     font-family: Montserrat;
     font-size: 9.5px; */
+    margin-right: 0;
+    /* margin-left: 3px; */
+    padding: 3px 7px;
 }
 
 /* Container for tags */
@@ -91,7 +101,7 @@
 /* First row of tags */
 .tagRow1 {
     display: flex;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
 }
 
 .tagRow2 {
