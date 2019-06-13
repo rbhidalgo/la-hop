@@ -114,7 +114,7 @@ body {
     display: grid;
     position: relative;
     grid-template-columns: 100vw;
-    grid-template-rows: 40px 40px 140px auto 5rem;
+    grid-template-rows: 40px 40px 240px auto 5rem;
   grid-template-areas:
   ' status '
   ' header '
@@ -166,30 +166,37 @@ body {
 
   .grid-logo > h1 {
     display: block;
-    font-size: 10vw;
+    font-family: Montserrat;
+    font-size: 45px;
     margin-block-start: 0em;
     margin-block-end: 0em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+    margin: 35px 10px 0 0;
     /* font-weight: bold; */
   }
   .grid-logo > h2 {
     display: block;
-    font-size: 7vw;
+    font-family: Montserrat;
+    font-size: 25px;
     margin-block-start: 0em;
     margin-block-end: 0em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+    margin: 14px 20px;
     /* font-weight: bold; */
   }
 
   .grid-logo > span {
-    font-size: 4vw;
+    font-family: Montserrat;
+    font-size: 12.5px;
+    margin: 14px 26px 20px 20px;
+
   }
   
   .grid-main { 
     grid-area: main; 
-    margin-top: 50px;
+    /* margin-top: 50px; */
     position: relative;
     background-color: transparent;
   }
@@ -316,25 +323,32 @@ body {
   }
   .grid-logo > h1 {
     display: block;
-    font-size: 5rem;
+    font-family: Montserrat;
+    font-size: 45px;
     margin-block-start: 0em;
     margin-block-end: 0em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+    margin: 10px 0;
     /* font-weight: bold; */
   }
   .grid-logo > h2 {
     display: block;
-    font-size: 3rem;
+  font-family: Montserrat;
+  font-size: 25.3px;
     margin-block-start: 0em;
     margin-block-end: 0em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+    margin: 10px 0;
     /* font-weight: bold; */
   }
 
   .grid-logo > span {
-    font-size: 2rem;
+    font-family: Montserrat;
+  font-size: 12.5px;
+  margin: 10px 0;
+
   }
 
   .grid-main { 
