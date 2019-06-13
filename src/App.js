@@ -46,7 +46,8 @@ class App extends Component {
   };
 
   // Change progress function for progress bar 
-  changeProgress = () => {
+  changeProgress = (e) => {
+    e.preventDefault()
     console.log("changeProgress function hit")
     let currentNum = this.state.percent
     this.setState({
