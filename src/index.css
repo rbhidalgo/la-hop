@@ -189,7 +189,9 @@ body {
     ' footer ';
     grid-gap: 0;
   }
-
+  .grid-header {
+    display: none;
+  }
   .grid-desktop { 
     grid-area: desktop; 
     width: 100vw;
