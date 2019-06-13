@@ -115,7 +115,7 @@ class Form extends Component {
                     dataSource={tagsList}
                     selectedDataSource={tags}
                     onTagClick={this.onTagClick}
-                />
+            />
             <button type="submit">Submit</button>
         </form>
   
