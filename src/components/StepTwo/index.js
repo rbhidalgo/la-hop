@@ -52,15 +52,15 @@ class StepTwo extends Component {
                     <div>
                         <h4>What is needed? *</h4>
                         <div>
-                            <button className="btnTag">Clothing</button>
-                            <button className="btnTag">General Assistance</button>
-                            <button className="btnTag">Mental Health Care</button>
+                            <button className="btnTag clothingTag">Clothing</button>
+                            <button className="btnTag generalTag">General Assistance</button>
+                            <button className="btnTag mentalTag">Mental Health Care</button>
                         </div>
                         <div>
-                            <button className="btnTag">ID</button>
-                            <button className="btnTag">Physical Healthcare</button>
-                            <button className="btnTag">Phone</button>
-                            <button className="btnTag">Food</button>
+                            <button className="btnTag idTag">ID</button>
+                            <button className="btnTag physicalTag">Physical Healthcare</button>
+                            <button className="btnTag phoneTag">Phone</button>
+                            <button className="btnTag foodTag">Food</button>
                         </div>
                     </div>
                     <div>

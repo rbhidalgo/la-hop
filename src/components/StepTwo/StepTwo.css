@@ -4,3 +4,7 @@
     flex-direction: column;
     align-items: center;
 }
+
+.btnTag {
+    border: 1px solid black
+}
