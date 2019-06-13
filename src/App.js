@@ -215,7 +215,7 @@ class App extends Component {
             </div>
 
             
-            {(this.state.stepOne) ? <StepOne changeHandler={this.changeHandler} location={this.state.location} changeProgress={this.changeProgress}/> : null}
+            {(this.state.stepOne) ? <StepOne changeHandler={this.changeHandler} location={this.state.location} changeProgress={this.changeProgress} stepOneClick={this.stepOneClick}/> : null}
 
             {(this.state.stepTwo) ? <StepTwo onTagClick={this.onTagClick} tags={this.state.tags} peopleCount={this.state.peopleCount} peopleNames={this.state.peopleNames} changeHandler={this.changeHandler} physicalDescript={this.state.physicalDescript} changeProgress={this.changeProgress}/> : null }
             
