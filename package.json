@@ -26,7 +26,11 @@
     "react-spinners": "^0.5.4",
     "react-step-progress-bar": "^1.0.3",
     "react-tag-buttons": "0.0.2",
+<<<<<<< HEAD
     "react-transition-group": "^4.1.1"
+=======
+    "styled-components": "^4.3.1"
+>>>>>>> master
   },
   "scripts": {
     "server": "node server.js",

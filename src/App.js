@@ -5,9 +5,10 @@ import { CSSTransition } from 'react-transition-group'
 
 import NavBar from './components/Nav'
 import MapContainer from './components/MapContainer'
-import LearnMore from './components/LearnMore'
-import DatePicker from './components/DatePicker'
-import StepProgressBar from './components/ProgressBar'
+import LearnMore    from './components/LearnMore'
+// import Form         from './components/Form'
+import DatePicker   from './components/DatePicker'
+import StepProgressBar  from './components/ProgressBar'
 import StepTwo from './components/StepTwo'
 import StepThree from './components/StepThree'
 
@@ -134,27 +135,21 @@ class App extends Component {
         </div>
 
         <div className="grid-main">
-          <Switch>
-            <Route exact path={routes.INFO} render={() =>
-              <LearnMore />
-            } />
-            <Route exact path={routes.REQUEST} render={() => <>
-              <CSSTransition
-              in={showStep}
-              appear={true}
-              timeout={600}
-              className="fade">
-              <MapContainer changeHandler={this.changeHandler} location={this.state.location} changeProgress={this.changeProgress} />
-              </CSSTransition>
-              <DatePicker />
-              <div className="barContainer">
-                <StepProgressBar percent={this.state.percent} />
-              </div>
-              <StepTwo onTagClick={this.onTagClick} tags={this.state.tags} peopleCount={this.state.peopleCount} peopleNames={this.state.peopleNames} changeHandler={this.changeHandler} physicalDescript={this.state.physicalDescript} changeProgress={this.changeProgress} />
-              <StepThree org={this.state.org} changeHandler={this.changeHandler} name={this.state.name} email={this.state.email} phone={this.state.phone} onSubmit={this.onSubmit} />
-            </>} />
-            <Route exact path={routes.ROOT} render={() => <></>} />
-          </Switch>
+        <Switch>
+          <Route exact path={routes.INFO} render={() =>
+            <LearnMore />
+          }/>
+          <Route exact path={routes.REQUEST} render={() => <>
+            <MapContainer changeHandler={this.changeHandler} location={this.state.location} changeProgress={this.changeProgress}/>
+            {/* <DatePicker /> */}
+            <div className="barContainer">
+            {/* <StepProgressBar percent={this.state.percent}/> */}
+            </div>
+            {/* <StepTwo onTagClick={this.onTagClick} tags={this.state.tags} peopleCount={this.state.peopleCount} peopleNames={this.state.peopleNames} changeHandler={this.changeHandler} physicalDescript={this.state.physicalDescript} changeProgress={this.changeProgress}/> */}
+            {/* <StepThree org={this.state.org} changeHandler={this.changeHandler} name={this.state.name} email={this.state.email} phone={this.state.phone} onSubmit={this.onSubmit} /> */}
+          </> }/>
+          <Route exact path={routes.ROOT} render={() => <></> }/>
+        </Switch>
         </div>
 
         <div className="grid-footer"></div>
