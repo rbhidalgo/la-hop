@@ -60,7 +60,7 @@ body {
     margin: 0 10vw;
 }
 
-.requestContainer > textarea, .requestContainer > div > textarea, .requestContainer > input, .requestContainer > div > input {
+.requestContainer > textarea, .requestContainer > div > textarea, .requestContainer > input, .requestContainer > div > input, .location-box {
   border: 1px solid #adadad;
   border-radius: 5px;
   display: inline-block;

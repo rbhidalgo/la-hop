@@ -36,3 +36,8 @@
   .google-covert {
       color: blue
   }
+
+.location-box{
+margin: 12px 10vw 4px 10vw;
+width: 80vw;
+}
