@@ -30,7 +30,7 @@ code {
   display: grid;
   position: relative;
   grid-template-columns: 100vw;
-  grid-template-rows: 24px 40px auto 5rem;
+  grid-template-rows: 30px 40px auto 5rem;
   /* grid-template-rows: 24px 53px 37px auto 5rem; */
   grid-template-areas:
   ' status '
@@ -44,9 +44,10 @@ code {
   .grid-mobile {
     grid-area: status;
     width: 100vw;
-    height: 24px;
+    height: 30px;
     position: fixed;
     text-align: center;
+    padding-top: 4px;
     background-color: black;
   }
   .grid-desktop { 
