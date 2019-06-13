@@ -10,26 +10,17 @@ class StepThree extends Component {
             <div>
                 <h1>This is the StepThree Component</h1>
                 <form>
-
-
-
-
-<select>
-    <option>Please select one</option>
-    <option name="" value="">Busines Owner</option>
-    <option name="" value="">Government Employee (City/County/State/Federal)/option>
-    <option name="" value="">Concerned Resident</option>
-    <option name="" value="">First Responder (e.g., Fire Department Law Enforcement)</option>
-    <option name="" value="">Homeless/Social Service Provider</option>
-    <option name="" value="">Self-Referral</option>
-    <option name="" value="">Elected Official</option>
-    <option name="" value="">Other</option>
-</select>
-
-
-
-
-
+                    <select>
+                        <option>Please select one</option>
+                        <option name="selfDescript" value="">Busines Owner</option>
+                        <option name="selfDescript" value="">Government Employee (City/County/State/Federal)/option>
+                        <option name="selfDescript" value="">Concerned Resident</option>
+                        <option name="selfDescript" value="">First Responder (e.g., Fire Department Law Enforcement)</option>
+                        <option name="selfDescript" value="">Homeless/Social Service Provider</option>
+                        <option name="selfDescript" value="">Self-Referral</option>
+                        <option name="selfDescript" value="">Elected Official</option>
+                        <option name="selfDescript" value="">Other</option>
+                    </select>
                     <input type="text" placeholder="org" name="org" onChange={this.props.changeHandler} value={this.props.org}/>
                     <input type="text" placeholder="name" name="name" onChange={this.props.changeHandler} value={this.props.name}/>
                     <input type="text" placeholder="email" name="email" onChange={this.props.changeHandler} value={this.props.email}/>
