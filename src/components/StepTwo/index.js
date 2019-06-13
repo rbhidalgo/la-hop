@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Redirect } from "react-router-dom";
 import TagButtons from 'react-tag-buttons';
+import Button from '../Styles/Button'
 
 const tagsList = [
     {id:1, text:"Clothing"},
