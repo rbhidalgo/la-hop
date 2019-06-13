@@ -18,3 +18,5 @@ class Confirmation extends Component {
         )
     }
 }
+
+export default Confirmation
