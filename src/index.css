@@ -112,6 +112,8 @@ body {
 
 .compensate {
   margin-left: 25vw !important;
+}
+
 .volunteerButton {
   width: 30vw;
   margin: 20px 35vw;
@@ -157,7 +159,7 @@ body {
     z-index: 500;
     text-align: center;
     padding-top: 9px;
-    background-color: black;
+    /* background-color: black; */
   }
 
   .grid-desktop { 
@@ -232,28 +234,6 @@ body {
     background-color: transparent;
   }
 
-
-  /*********************************************************************/
-  /*************************** NAVBAR BUTTON ***************************/
-  /*********************************************************************/
-
-  .navBar {
-    padding: 8px;
-  }
-
-  .navBtn {
-    padding: 11px;
-    color: white;
-    text-decoration: none;
-  }
-
-  .navBtn:hover {
-    background-color: darkgrey;
-  }
-
-  .active {
-    background-color: black;
-  }
 
   /*********************************************************************/
   /*************************** HEADER BAR ******************************/

@@ -19,8 +19,7 @@ class NavBar extends Component {
         })
      }
 
-     changeColor2=(e)=>{
-         e.preventDefault()
+     changeColor2=()=>{
         this.setState({
             underline2: !this.state.underline2
         })
