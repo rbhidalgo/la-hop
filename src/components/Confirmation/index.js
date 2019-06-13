@@ -7,9 +7,9 @@ class Confirmation extends Component {
         return (
             <div className="confirmationContainer">
                 <h1>Thank you!</h1>
-                <p>Your request has been received. We appreciate your support in assisting our homeless neighbors.</p>
+                <p className="confirmationParagraph">Your request has been received. We appreciate your support in assisting our homeless neighbors.</p>
                 <br />
-                <p>Please visit Learn More to find out what our outreach teams do to support those experiencing homelessness.</p>
+                <p className="confirmationParagraph">Please visit Learn More to find out what our outreach teams do to support those experiencing homelessness.</p>
                 <br />
                 <button className="continueButton">Go Home</button>
                 <br />
