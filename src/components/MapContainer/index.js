@@ -49,6 +49,9 @@ export class MapContainer extends Component {
     <Marker onClick={this.onMarkerClick}
                name={'Current location'} lat={this.state.lat} lng={this.state.lng}/>
      </Map>
+     <form>
+        <textarea type="text" placeholder="location" name="location" onChange={this.props.changeHandler} value={this.props.location}/>
+    </form>
      </>
    );
  }

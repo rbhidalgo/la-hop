@@ -8,7 +8,7 @@ import LearnMore    from './components/LearnMore'
 import Form         from './components/Form'
 import DatePicker   from './components/DatePicker'
 import StepProgressBar  from './components/ProgressBar'
-import Step1 from './component/Step1'
+import StepOne from './components/StepOne'
 
 
 import * as routes  from './constants/routes'
@@ -111,12 +111,12 @@ class App extends Component {
             <LearnMore />
           }/>
           <Route exact path={routes.REQUEST} render={() => <>
-            <MapContainer />
-            <DatePicker />
+            {/* <MapContainer /> */}
+            {/* <DatePicker /> */}
             <div className="barContainer">
-            <StepProgressBar />
+            {/* <StepProgressBar /> */}
             </div>
-            <Step1 changeHandler={this.changeHandler}/>
+            <StepOne changeHandler={this.changeHandler} location={this.state.location}/>
           </> }/>
           <Route exact path={routes.ROOT} render={() => <></> }/>
         </Switch>
