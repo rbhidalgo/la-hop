@@ -37,7 +37,11 @@ class App extends Component {
     phone: '',
     agreement: false,
     loading: true,
-    percent: 0
+    percent: 0,
+    stepOne: true,
+    stepTwo: false,
+    stepThree: false,
+    thankYou: false
   };
 
   changeHandler = e => {
