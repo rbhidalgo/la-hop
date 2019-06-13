@@ -15,7 +15,7 @@ import StepThree from './components/StepThree'
 import * as routes  from './constants/routes'
 import './App.css'
 import 'react-tag-buttons/lib/css/styles.css'
-import NavBar from './components/Nav';
+// import NavBar from './components/Nav';
 
 
 class App extends Component {
