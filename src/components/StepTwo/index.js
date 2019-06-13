@@ -78,9 +78,9 @@ class StepTwo extends Component {
 
     render() {
         return (
-            <div>
+            <div className="">
                 {/* <h1>This is the StepTwo Component</h1> */}
-                <form className="stepTwoForm">
+                <form className="stepTwoForm requestContainer">
                     <div>
                         <h4>Date last seen *</h4>
                         <DatePicker />
