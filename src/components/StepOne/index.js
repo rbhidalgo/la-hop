@@ -33,11 +33,11 @@ export class StepOne extends Component {
 
         <div className="stepOneContainer">
         <div className="stepStatus">
-          <div>1</div><div>
+          <div>1</div>
 
           <span>Location<br />
           Enter the location of person/people in need</span>
-          </div>
+          
         </div>
           <div className="locatorContainer">
             <GoogleComponent
