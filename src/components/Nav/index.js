@@ -19,7 +19,8 @@ class NavBar extends Component {
         })
      }
 
-     changeColor2=()=>{
+     changeColor2=(e)=>{
+         e.preventDefault()
         this.setState({
             underline2: !this.state.underline2
         })
@@ -37,13 +38,13 @@ class NavBar extends Component {
 				timeout={300}
 				classNames='fade'>
                     <nav className='navbar-navigation'>
-    					<div className={btn_class} onClick={this.changeColor}>
+    					<div className={btn_class} onClick={this.changeColor && !this.changeColor2}>
                         <NavLink
 						to={routes.REQUEST}>
 						Make Request
 					</NavLink>
                     </div>
-                    <div className={btn_class2} onClick={this.changeColor2}>
+                    <div className={btn_class2} onClick={this.changeColor2 && !this.changeColor}>
 					<NavLink
 						to={routes.LEARN}>
 						Learn More
