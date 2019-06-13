@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 
+// CSS
+import './LearnMore.css'
 class LearnMore extends Component {
 
     render() {
 
         return(
 
-            <div>
+            <div className="learnMoreContainer">
                 <div>
                     <img src="hearticon.png"></img>
                     <p>We’ll use the information from the requests made to dispatch a homeless services outreach team to the area.</p>
