@@ -11,7 +11,7 @@ class Confirmation extends Component {
                 <br />
                 <p>Please visit Learn More to find out what our outreach teams do to support those experiencing homelessness.</p>
                 <br />
-                <button className="continueButton">Back to LAHSA</button>
+                <button className="continueButton">Go Home</button>
                 <br />
                 <p>Want to get more involved?</p>
                 <br />
