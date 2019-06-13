@@ -8,8 +8,14 @@ import "../Styles/animation.css";
 
 class NavBar extends Component {
 	state = {
-		showStep: true
-	};
+        showStep: true,
+        underline: false
+    };
+    
+    changeColor(){
+        this.setState({underline: !this.state.underline})
+     }
+
 	render() {
 		const { showStep } = this.state;
 		return (
