@@ -1,26 +1,4 @@
-.stepStatus {
-  width: 80vw;
-  height: 60px;
-  margin: 0 10vw;
-}
 
-.stepStatus > span {
-  display: inline-block;
-  bottom: 0;
-}
-
-.stepStatus > div {
-  /* top: 0; */
-  padding: 3px;
-  text-align: center;
-  font-size: 12px;
-  display: fixed;
-  border-radius: 100px;
-  background-color: rgb(215, 85, 85);
-  display: inline-block;
-  width: 22px;
-  height: 22px;
-}
 
 
 
