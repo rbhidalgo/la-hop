@@ -15,8 +15,15 @@ class StepThree extends Component {
 
 
 <select>
-    <option>*** select one***</option>
-    <option name="" value="">value</option>
+    <option>Please select one</option>
+    <option name="" value="">Busines Owner</option>
+    <option name="" value="">Government Employee (City/County/State/Federal)/option>
+    <option name="" value="">Concerned Resident</option>
+    <option name="" value="">First Responder (e.g., Fire Department Law Enforcement)</option>
+    <option name="" value="">Homeless/Social Service Provider</option>
+    <option name="" value="">Self-Referral</option>
+    <option name="" value="">Elected Official</option>
+    <option name="" value="">Other</option>
 </select>
 
 
