@@ -3,7 +3,7 @@ import { Switch, Route, withRouter } from 'react-router-dom'
 import { PacmanLoader }              from 'react-spinners'
 
 // import NavBar       from './components/Nav'
-import MapContainer from './components/MapContainer'
+import StepOne from './components/StepOne'
 import LearnMore    from './components/LearnMore'
 import DatePicker   from './components/DatePicker'
 import StepProgressBar  from './components/ProgressBar'
@@ -133,19 +133,20 @@ onTagClick = (currSelectedState, id, text) => {
 
         <div className="grid-main">
         <Switch>
-          <Route exact path={routes.INFO} render={() =>
+          <Route exact path={routes.LEARN} render={() =>
             <LearnMore />
           }/>
           <Route exact path={routes.REQUEST} render={() => <>
-            <MapContainer changeHandler={this.changeHandler} location={this.state.location} changeProgress={this.changeProgress}/>
-            {/* <DatePicker /> */}
             <div className="barContainer">
-            {/* <StepProgressBar percent={this.state.percent}/> */}
+            <StepProgressBar percent={this.state.percent}/>
+            <div>(1) this will be where the progress bar updater will go.</div>
             </div>
-            {/* <StepTwo onTagClick={this.onTagClick} tags={this.state.tags} peopleCount={this.state.peopleCount} peopleNames={this.state.peopleNames} changeHandler={this.changeHandler} physicalDescript={this.state.physicalDescript} changeProgress={this.changeProgress}/> */}
-            {/* <StepThree org={this.state.org} changeHandler={this.changeHandler} name={this.state.name} email={this.state.email} phone={this.state.phone} onSubmit={this.onSubmit} /> */}
           </> }/>
-          <Route exact path={routes.ROOT} render={() => <></> }/>
+          <Route exact path={routes.ROOT} render={() => <>
+            <StepOne changeHandler={this.changeHandler} location={this.state.location} changeProgress={this.changeProgress}/>
+            <StepTwo onTagClick={this.onTagClick} tags={this.state.tags} peopleCount={this.state.peopleCount} peopleNames={this.state.peopleNames} changeHandler={this.changeHandler} physicalDescript={this.state.physicalDescript} changeProgress={this.changeProgress}/>
+            <StepThree org={this.state.org} changeHandler={this.changeHandler} name={this.state.name} email={this.state.email} phone={this.state.phone} onSubmit={this.onSubmit} />
+          </> }/>
         </Switch>
         </div>
 
