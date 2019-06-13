@@ -4,7 +4,7 @@ import { PacmanLoader } from 'react-spinners'
 import { CSSTransition } from 'react-transition-group'
 
 import NavBar from './components/Nav'
-import MapContainer from './components/MapContainer'
+import StepOne from './components/StepOne'
 import LearnMore    from './components/LearnMore'
 // import Form         from './components/Form'
 import DatePicker   from './components/DatePicker'
@@ -140,8 +140,7 @@ class App extends Component {
             <LearnMore />
           }/>
           <Route exact path={routes.REQUEST} render={() => <>
-            <MapContainer changeHandler={this.changeHandler} location={this.state.location} changeProgress={this.changeProgress}/>
-            {/* <DatePicker /> */}
+            <StepOne changeHandler={this.changeHandler} location={this.state.location} changeProgress={this.changeProgress}/>
             <div className="barContainer">
             {/* <StepProgressBar percent={this.state.percent}/> */}
             </div>
