@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Redirect } from "react-router-dom";
 import TagButtons from 'react-tag-buttons';
+import Button from '../Styles/Button'
 
 const tagsList = [
     {id:1, text:"Clothing"},
@@ -26,7 +27,7 @@ class StepTwo extends Component {
                     selectedDataSource={this.props.tags}
                     onTagClick={this.props.onTagClick}
                     />
-                    <button onClick={this.props.changeProgress}>Next Step</button>
+                    <Button onClick={this.props.changeProgress}>Next Step</Button>
                 </form>
             </div>
         )
