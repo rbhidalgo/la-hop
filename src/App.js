@@ -28,6 +28,21 @@ class App extends Component {
 
       <div className="grid-container">
         <div className="grid-mobile"><img src="status_bar.png" /></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
         <div className="grid-header">
           <div className="top-left"><img src="grid_mobile.png"></img></div>
           <div className="mid-left">LA-HOP</div><div className="mid-right"></div>
