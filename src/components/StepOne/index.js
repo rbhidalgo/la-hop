@@ -3,13 +3,9 @@ import {Map, Marker, GoogleApiWrapper} from 'google-maps-react';
 import { GoogleComponent } from 'react-google-location' 
 import Button from '../Styles/Button'
 
-<<<<<<< HEAD
-const API_KEY = "AIzaSyDvWu69XjuxqaUQnd8ZWDl7QEtEQUwNRFY";
-=======
 import './StepOne.css'
 
 const API_KEY = "AIzaSyDvWu69XjuxqaUQnd8ZWDl7QEtEQUwNRFY"
->>>>>>> master
 
 export class StepOne extends Component {
   state = {

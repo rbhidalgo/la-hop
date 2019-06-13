@@ -17,7 +17,7 @@ class NavBar extends Component {
 				appear={true}
 				timeout={300}
 				classNames='fade'>
-                    <nav className='navbar_navigation'>
+                    <nav className='navbar-navigation'>
     					<div className="nav-link">
                         <NavLink
 						to={routes.REQUEST}>

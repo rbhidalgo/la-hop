@@ -1,3 +1,17 @@
+.navbar-navigation {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-link {
+    flex: 1;
+    margin: 25px 0;
+    font-family: Montserrat;
+  font-size: 15.1px;
+  font-weight: 400;
+  color: black;
+}
+
 .fade-appear {
     opacity: 0;
     z-index: 1;
