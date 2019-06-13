@@ -1,0 +1,91 @@
+/* Form in StepTwo */
+.stepTwoForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* All button tags */
+.btnTag {
+    border-radius: 5px;
+    border: solid 1px #979797;
+    background: transparent;
+    text-align: center
+}
+
+.btnTag:active {
+    background-color: rgba(217, 84, 80, 0.5);
+}
+
+.clothingTag {
+    width: 57px;
+    height: 24px;
+    font-size: 9.5px;
+    font-family: Montserrat;
+    margin-right: 3px;
+    margin-bottom: 3px;
+}
+
+.generalTag {
+    width: 108px;
+    height: 24px;
+    font-family: Montserrat;
+    font-size: 9.5px;
+    margin-right: 3px;
+    margin-bottom: 3px;
+}
+
+.mentalTag {
+    width: 107px;
+    height: 24px;
+    font-family: Montserrat;
+    font-size: 9.5px;
+    margin-bottom: 3px;
+}
+
+.idTag {
+    width: 46px;
+    height: 24px;
+    font-family: Montserrat;
+    font-size: 9.5px;
+    margin-right: 3px;
+}
+
+.physicalTag {
+    width: 115px;
+    height: 24px;
+    font-family: Montserrat;
+    font-size: 9.5px;
+    margin-right: 3px;
+}
+
+.phoneTag {
+    width: 49px;
+    height: 24px;
+    font-family: Montserrat;
+    font-size: 9.5px;
+    margin-right: 3px;
+}
+
+.foodTag {
+    width: 59px;
+    height: 24px;
+    font-family: Montserrat;
+    font-size: 9.5px;
+}
+
+/* Container for tags */
+.tagContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+/* First row of tags */
+.tagRow1 {
+    display: flex;
+}
+
+.tagRow2 {
+    display: flex;
+}
+
