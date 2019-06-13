@@ -76,6 +76,7 @@ class App extends Component {
   stepOneClick = (e) => {
     e.preventDefault()
     console.log('stepOneClick function hit')
+    this.changeProgress()
     this.setState({
       stepOne: false,
       stepTwo: true
@@ -85,6 +86,7 @@ class App extends Component {
   stepTwoClick = (e) => {
     e.preventDefault()
     console.log('stepTwoClick function hit')
+    this.changeProgress()
     this.setState({
       stepTwo: false,
       stepThree: true
