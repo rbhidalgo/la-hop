@@ -80,6 +80,7 @@ body {
 
 .compensate {
   margin-left: 25vw !important;
+}
 .volunteerButton {
   width: 30vw;
   margin: 20px 35vw;
@@ -392,7 +393,7 @@ select {
     display: grid;
     position: relative;
     grid-template-columns: 100vw;
-    grid-template-rows: 53px 130px auto 5rem;
+    grid-template-rows: 53px 240px auto 5rem;
   grid-template-areas:
     ' desktop '
     ' logo '
