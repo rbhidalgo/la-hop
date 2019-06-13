@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Switch, Route, withRouter } from 'react-router-dom'
 import { PacmanLoader } from 'react-spinners'
-import { CSSTransition } from 'react-transition-group'
 
 import NavBar       from './components/Nav'
 import StepOne from './components/StepOne'
@@ -22,7 +21,6 @@ import 'react-tag-buttons/lib/css/styles.css'
 class App extends Component {
 
   state = {
-    showStep: true,
     message: "",
     location: '',
     date: '',
@@ -108,7 +106,7 @@ class App extends Component {
   };
 
   render() {
-    const { showStep } = this.state
+    // const { showStep } = this.state
 
     return (
 

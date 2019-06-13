@@ -1,0 +1,19 @@
+.fade-appear {
+    transform: translateX(-100%);
+    z-index: 1;
+}
+
+.fade-appear.fade-appear-active {
+    transform: translateX(0);
+    transition: transform 300ms linear;
+}
+
+.fade-enter {
+    transform: translateX(-100%);
+    z-index: 1;
+}
+
+.fade-enter.fade-enter-active {
+    transform: translateX(0);
+    transition: transform 300ms linear;
+}
