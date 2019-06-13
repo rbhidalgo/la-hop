@@ -9,6 +9,7 @@ class StepTwo extends Component {
                 <form>
                     <input type="text" placeholder="peopleCount" name="peopleCount" onChange={this.props.changeHandler} value={peopleCount}/>
                     <input type="text" placeholder="peopleNames" name="peopleNames" onChange={this.props.changeHandler} value={peopleNames}/>
+                    <textarea type="text" placeholder="physicalDescript" name="physicalDescript" onChange={this.props.changeHandler} value={physicalDescript}/>
                 </form>
             </div>
         )
