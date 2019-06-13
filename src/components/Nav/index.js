@@ -4,6 +4,7 @@ import { CSSTransition } from "react-transition-group";
 
 import * as routes from "../../constants/routes";
 import "../Styles/animation.css";
+// import '../index.css';
 
 class NavBar extends Component {
 	state = {

@@ -1,9 +1,14 @@
+.navbar-navigation a {
+    color: #000000;
+    text-decoration: none;
+  }
+
 .navbar-navigation {
     display: flex;
     flex-direction: row;
 }
 
-.nav-link1 {
+.nav-link1, .nav-link2 {
     flex: 1;
     margin: 25px 0;
     font-family: Montserrat;
@@ -14,7 +19,7 @@
   border-bottom: 1px solid #000;
 }
 
-.nav-link2 {
+/* .nav-link2 {
     flex: 1;
     margin: 25px 0;
     font-family: Montserrat;
@@ -23,7 +28,7 @@
   color: black;
   padding-bottom: 4px;
   border-bottom: 1px solid #000;
-}
+} */
 
 .nav-link1 a:hover, a:focus {
     color: #000;
@@ -33,9 +38,13 @@
     /* border-bottom: 2px solid #000; */
 }
 
-.nav-link1 a {
+
+.nav-link2 a:hover, a:focus {
     color: #000;
+    font-weight: 600;
     text-decoration: none;
+    padding-bottom: 5px;
+    /* border-bottom: 2px solid #000; */
 }
 
 .fade-appear {
