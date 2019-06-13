@@ -72,24 +72,24 @@ class Form extends Component {
     <> 
         <h1>{message}</h1>
         <form onSubmit={this.onSubmit}>
-            <textarea type="text" placeholder="location" name="location" onChange={this.changeHandler} value={location}/>
-            {/* <input type="date" placeholder="date" name="date" onChange={this.changeHandler} value={date}/> */}
-            <input type="text" placeholder="peopleCount" name="peopleCount" onChange={this.changeHandler} value={peopleCount}/>
-            <input type="text" placeholder="peopleNames" name="peopleNames" onChange={this.changeHandler} value={peopleNames}/>
+            <textarea type="text" placeholder="location" name="location" onChange={this.props.changeHandler} value={location}/>
+            {/* <input type="date" placeholder="date" name="date" onChange={this.props.changeHandler} value={date}/> */}
+            <input type="text" placeholder="peopleCount" name="peopleCount" onChange={this.props.changeHandler} value={peopleCount}/>
+            <input type="text" placeholder="peopleNames" name="peopleNames" onChange={this.props.changeHandler} value={peopleNames}/>
             <textarea
                 type="text"
                 placeholder="physicalDescript"
                 name="physicalDescript"
-                onChange={this.changeHandler}
+                onChange={this.props.changeHandler}
                 value={physicalDescript}
             />
-            <textarea type="text" placeholder="needsDescript" name="needsDescript" onChange={this.changeHandler} value={needsDescript}/>
+            <textarea type="text" placeholder="needsDescript" name="needsDescript" onChange={this.props.changeHandler} value={needsDescript}/>
             <input type="text" placeholder="tags" name="tags"/>
-            <input type="text" placeholder="name" name="name" onChange={this.changeHandler} value={name}/>
-            <input type="text" placeholder="org" name="org" onChange={this.changeHandler} value={org}/>
-            <textarea type="text" placeholder="selfDescript" name="selfDescript" onChange={this.changeHandler} value={selfDescript}/>
-            <input type="text" placeholder="email" name="email" onChange={this.changeHandler} value={email}/>
-            <input type="text" placeholder="phone" name="phone" onChange={this.changeHandler} value={phone}/>
+            <input type="text" placeholder="name" name="name" onChange={this.props.changeHandler} value={name}/>
+            <input type="text" placeholder="org" name="org" onChange={this.props.changeHandler} value={org}/>
+            <textarea type="text" placeholder="selfDescript" name="selfDescript" onChange={this.props.changeHandler} value={selfDescript}/>
+            <input type="text" placeholder="email" name="email" onChange={this.props.changeHandler} value={email}/>
+            <input type="text" placeholder="phone" name="phone" onChange={this.props.changeHandler} value={phone}/>
             <input type="checkbox" name="agreement" />
             <TagButtons
                     dataSource={tagsList}
