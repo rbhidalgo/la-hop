@@ -34,7 +34,7 @@ class LearnMore extends Component {
                     <p>LA-HOP does not replace homeless encampment reporting protocols. Please contact your municipality.</p>
                 </div>
                 <br />
-                <button>Make Request</button>
+                <button className="continueButton">Make Request</button>
             </div>
         )
     }
