@@ -1,0 +1,8 @@
+/* Container holding all of confirmation */
+
+.confirmationContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+    align-items: center; 
+}
