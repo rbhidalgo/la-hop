@@ -131,6 +131,12 @@ code {
   }
 
   .top-right {
+    height: 40px;
+    padding: 10px 26px;
+    font-size: 14px;
+    width: 100px;
+    float: right;
+    background-color: black;
   /* width: 18.3vw; */
   float: right;
   background-color: black;
@@ -260,8 +266,9 @@ code {
   }
 
   .top-right {
-
-    /* width: 18.3vw; */
+    padding: 14px 45px;
+    font-size: 33px;
+    width: 150px;
     float: right;
     background-color: black;
   }
