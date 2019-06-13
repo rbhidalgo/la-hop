@@ -42,6 +42,15 @@ class App extends Component {
     });
   };
 
+  // Change progress function for progress bar 
+  changeProgress = () => {
+    console.log("changeProgress function hit")
+    let currentNum = this.state.percent
+    this.setState({
+        percent: currentNum + 50
+    });
+}
+
   onSubmit = async e => {
     e.preventDefault();
     try{
