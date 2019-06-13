@@ -206,7 +206,35 @@ select {
     background-color: transparent;
   }
 
+/*********************************************************************/
+/***************************  ProgressBar  ***************************/
+/*********************************************************************/
+.indexedStep {
+  color: black;
+  width: 40px;
+  height: 40px;
+  font-size: 12px;
+  background-color: white;
+  border-radius: 100px;
+  border: 2px solid rgba(215, 85, 83, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.indexedStep.accomplished {
+  background-color: rgba(215, 85, 83, 1);
+}
+
+.RSPBprogression {
+  background: rgba(215, 85, 83, 1) !important;
+}
+
+.barContainer {
+    width: 80vw;
+    margin: 10px 10vw 0 10vw;
+    transform: scale(.6)
+}
 /*********************************************************************/
 /************************* Status Window *****************************/
 /*********************************************************************/
@@ -437,7 +465,35 @@ select {
     position: sticky;
     background-color: transparent;
   }
+/*********************************************************************/
+/***************************  ProgressBar  ***************************/
+/*********************************************************************/
+.indexedStep {
+  color: black;
+  width: 40px;
+  height: 40px;
+  font-size: 12px;
+  background-color: white;
+  border-radius: 100px;
+  border: 2px solid rgba(215, 85, 83, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.indexedStep.accomplished {
+  background-color: rgba(215, 85, 83, 1);
+}
+
+.RSPBprogression {
+  background: rgba(215, 85, 83, 1) !important;
+}
+
+.barContainer {
+    width: 80vw;
+    margin: 100px 10vw 0 10vw;
+    /* transform: scale(.6) */
+}
 /*********************************************************************/
 /************************* Status Window *****************************/
 /*********************************************************************/
@@ -452,7 +508,7 @@ select {
   display: inline-block;
   float: right;
   padding: 5px 0 0 6px;
-  width: 75vw;
+  width: 70vw;
   text-align: left;
   /* margin-top: 20px; */
 }
