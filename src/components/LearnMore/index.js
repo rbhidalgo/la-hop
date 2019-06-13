@@ -7,7 +7,7 @@ class LearnMore extends Component {
         return(
 
             <>
-                <h1>Learn More</h1>
+                <h1 style={{marginTop: "40px"}}>Learn More</h1>
 
                 <section>
                 <h1>WHEN SHOULD I FILL OUT AN OUTREACH REQUEST?</h1>

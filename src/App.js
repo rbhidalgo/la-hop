@@ -139,7 +139,7 @@ class App extends Component {
             <LearnMore />
           }/>
           <Route exact path={routes.REQUEST} render={() => <>
-          <h1>REQUEST PLACE HOLDER</h1>
+          <h1 style={{marginTop: "40px"}}>REQUEST PLACE HOLDER</h1>
           </> }/>
           <Route exact path={routes.ROOT} render={() => <>
 

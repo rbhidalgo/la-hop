@@ -1,19 +1,19 @@
 .fade-appear {
-    transform: translateX(-100%);
+    opacity: 0;
     z-index: 1;
 }
 
 .fade-appear.fade-appear-active {
-    transform: translateX(0);
-    transition: transform 300ms linear;
+    opacity: 1;
+    transition: opacity 300ms linear;
 }
 
 .fade-enter {
-    transform: translateX(-100%);
+    opacity: 0;
     z-index: 1;
 }
 
 .fade-enter.fade-enter-active {
-    transform: translateX(0);
-    transition: transform 300ms linear;
+    opacity: 1;
+    transition: opacity 300ms linear;
 }
