@@ -41,7 +41,7 @@ class App extends Component {
     stepOne: true,
     stepTwo: false,
     stepThree: false,
-    thankYou: false
+    confirmation: false
   };
 
   changeHandler = e => {
@@ -162,7 +162,7 @@ class App extends Component {
             
             {(this.state.stepThree) ? <StepThree org={this.state.org} changeHandler={this.changeHandler} name={this.state.name} email={this.state.email} phone={this.state.phone} onSubmit={this.onSubmit} /> : null }
 
-            <Confirmation />
+            {(this.state.confirmation) ? <Confirmation /> : null }
 
           </> }/>
         </Switch>
