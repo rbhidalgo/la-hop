@@ -88,17 +88,17 @@ class StepTwo extends Component {
                     <br/>
                     <div>
                         <h4>Number of people *</h4>
-                        <input type="number" placeholder="peopleCount" name="peopleCount" onChange={this.props.changeHandler} value={this.props.peopleCount}/>
+                        <input type="number" name="peopleCount" onChange={this.props.changeHandler} value={this.props.peopleCount}/>
                     </div>
                     <br/>
                     <div>
                         <h4>Name of person/people requiring outreach *</h4>
-                        <input type="text" placeholder="peopleNames" name="peopleNames" onChange={this.props.changeHandler} value={this.props.peopleNames}/>
+                        <input type="text" name="peopleNames" onChange={this.props.changeHandler} value={this.props.peopleNames}/>
                     </div>
                     <br/>
                     <div>
                         <h4>Description of person/people *</h4>
-                        <textarea type="text" placeholder="physicalDescript" name="physicalDescript" onChange={this.props.changeHandler} value={this.props.physicalDescript}/>
+                        <textarea type="text" name="physicalDescript" onChange={this.props.changeHandler} value={this.props.physicalDescript}/>
                     </div>
                     <br/>
                     <div className="tagContainer">
