@@ -148,7 +148,9 @@ onTagClick = (currSelectedState, id, text) => {
             <br />
             <div>(1) this will be where the progress bar updater will go.</div>
             </div>
-
+            <hr />
+            <hr />
+            
             <StepOne changeHandler={this.changeHandler} location={this.state.location} changeProgress={this.changeProgress}/>
 
             <StepTwo onTagClick={this.onTagClick} tags={this.state.tags} peopleCount={this.state.peopleCount} peopleNames={this.state.peopleNames} changeHandler={this.changeHandler} physicalDescript={this.state.physicalDescript} changeProgress={this.changeProgress}/>
