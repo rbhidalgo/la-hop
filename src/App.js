@@ -137,12 +137,12 @@ onTagClick = (currSelectedState, id, text) => {
             <LearnMore />
           }/>
           <Route exact path={routes.REQUEST} render={() => <>
-            {/* <MapContainer changeHandler={this.changeHandler} location={this.state.location} changeProgress={this.changeProgress}/> */}
-            {/* <DatePicker /> */}
+            <MapContainer changeHandler={this.changeHandler} location={this.state.location} changeProgress={this.changeProgress}/>
+            <DatePicker />
             <div className="barContainer">
-            {/* <StepProgressBar percent={this.state.percent}/> */}
+            <StepProgressBar percent={this.state.percent}/>
             </div>
-            {/* <StepTwo onTagClick={this.onTagClick} tags={this.state.tags} peopleCount={this.state.peopleCount} peopleNames={this.state.peopleNames} changeHandler={this.changeHandler} physicalDescript={this.state.physicalDescript} changeProgress={this.changeProgress}/> */}
+            <StepTwo onTagClick={this.onTagClick} tags={this.state.tags} peopleCount={this.state.peopleCount} peopleNames={this.state.peopleNames} changeHandler={this.changeHandler} physicalDescript={this.state.physicalDescript} changeProgress={this.changeProgress}/>
             <StepThree org={this.state.org} changeHandler={this.changeHandler} name={this.state.name} email={this.state.email} phone={this.state.phone} onSubmit={this.onSubmit} />
           </> }/>
           <Route exact path={routes.ROOT} render={() => <></> }/>
