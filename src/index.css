@@ -55,7 +55,11 @@ body {
 
 .requestContainer > section > input, .requestContainer > section > span {
   padding: 10px 5px;
+}
 
+.requestContainer > section > span {
+  /* padding: 10px 5px; */
+margin-left: 20px;
 }
 
 .requestContainer > h4 {
@@ -65,7 +69,11 @@ body {
 }
 
 .checkbox {
+  position: relative;
   max-height: 22px;
+  width: 40px;
+  margin: 0;
+  float: left;
 }
 
 .continueButton {

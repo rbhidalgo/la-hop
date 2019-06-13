@@ -96,7 +96,7 @@ class StepTwo extends Component {
                     </div>
                     <br/>
                     <div>
-                        <h4>Name of person/people requiring outreach<span className="alert">*</span></h4>
+                        <h4>Name of person/people requiring outreach</h4>
                         <input type="text" name="peopleNames" onChange={this.props.changeHandler} value={this.props.peopleNames}/>
                     </div>
                     <br/>
