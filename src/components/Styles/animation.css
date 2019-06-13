@@ -8,7 +8,7 @@
     flex-direction: row;
 }
 
-.nav-link1, .nav-link2 {
+.nav-link1 {
     flex: 1;
     margin: 25px 0;
     font-family: Montserrat;
@@ -17,13 +17,41 @@
   color: black;
   padding-bottom: 4px;
   border-bottom: 1px solid #000;
-  cursor: pointer;
 }
 
-.nav-link1:active {
+.nav-link2px {
+    flex: 1;
+    margin: 25px 0;
+    font-family: Montserrat;
+  font-size: 15px;
+  font-weight: 600;
+  color: black;
   padding-bottom: 4px;
   border-bottom: 2px solid #000;
 }
+
+.nav-link2 {
+    flex: 1;
+    margin: 25px 0;
+    font-family: Montserrat;
+  font-size: 15px;
+  font-weight: 400;
+  color: black;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #000;
+}
+
+.nav-link22px {
+    flex: 1;
+    margin: 25px 0;
+    font-family: Montserrat;
+  font-size: 15px;
+  font-weight: 600;
+  color: black;
+  padding-bottom: 4px;
+  border-bottom: 2px solid #000;
+}
+
 
 /* .nav-link2 {
     flex: 1;
