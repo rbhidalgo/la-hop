@@ -100,8 +100,10 @@ select {
   margin: 0 0 5px 0 !important;
 }
 
-
-
+.alert {
+  color: red;
+  margin-left: -10px;
+}
 
 
 
