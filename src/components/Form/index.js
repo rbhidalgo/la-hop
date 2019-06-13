@@ -5,8 +5,8 @@ import TagButtons from 'react-tag-buttons';
 // // import './Register.css'
 
 const tagsList = [
-    {id:1, text:"Food"},
-    {id:2, text:"Clothing"},
+    {id:1, text:"Clothing"},
+    {id:2, text:"ID"},
     {id:3, text:"Mental Health Care"},
     {id:4, text:"General Assistance"}
 ];
@@ -115,7 +115,7 @@ class Form extends Component {
                     dataSource={tagsList}
                     selectedDataSource={tags}
                     onTagClick={this.onTagClick}
-                />
+            />
             <button type="submit">Submit</button>
         </form>
   

@@ -21,3 +21,8 @@
   .RSPBprogression {
     background: rgba(215, 85, 83, 1) !important;
   }
+
+  .barContainer {
+      max-width: 80vw;
+      margin-left: 10vw;
+  }
