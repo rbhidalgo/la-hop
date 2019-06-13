@@ -116,7 +116,7 @@ class StepTwo extends Component {
                         </div>
                     </div>
                     <div>
-                        <Button onClick={this.props.changeProgress}>Next Step</Button>
+                        <button onClick={this.props.changeProgress} className="continueButton">Next Step</button>
                     </div>
                 </form>
             </div>
