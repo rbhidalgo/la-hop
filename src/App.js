@@ -121,10 +121,10 @@ class App extends Component {
             <LearnMore />
           }/>
           <Route exact path={routes.REQUEST} render={() => <>
-            <MapContainer changeHandler={this.changeHandler} location={this.state.location} changeProgress={this.changeProgress}/>
+            {/* <MapContainer changeHandler={this.changeHandler} location={this.state.location} changeProgress={this.changeProgress}/> */}
             {/* <DatePicker /> */}
             <div className="barContainer">
-            <StepProgressBar percent={this.state.percent}/>
+            {/* <StepProgressBar percent={this.state.percent}/> */}
             </div>
           </> }/>
           <Route exact path={routes.ROOT} render={() => <></> }/>

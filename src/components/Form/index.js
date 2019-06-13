@@ -33,8 +33,6 @@ class Form extends Component {
     <> 
         <h1>{message}</h1>
         <form onSubmit={this.props.onSubmit}>
-            <textarea type="text" placeholder="location" name="location" onChange={this.props.changeHandler} value={location}/>
-            {/* <input type="date" placeholder="date" name="date" onChange={this.props.changeHandler} value={date}/> */}
             <input type="text" placeholder="peopleCount" name="peopleCount" onChange={this.props.changeHandler} value={peopleCount}/>
             <input type="text" placeholder="peopleNames" name="peopleNames" onChange={this.props.changeHandler} value={peopleNames}/>
             <textarea
