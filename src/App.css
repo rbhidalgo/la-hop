@@ -14,7 +14,10 @@ body {
 
 .form-control {
     text-align: center;
-    width: 200px;
+    width: 80vw;
+    margin: 0 10vw;
+    border-radius: 5px;
+    border: solid 1px #979797;
 }
 
 .table > *{
