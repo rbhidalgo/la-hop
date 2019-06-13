@@ -49,14 +49,14 @@ class StepTwo extends Component {
                         <textarea type="text" placeholder="physicalDescript" name="physicalDescript" onChange={this.props.changeHandler} value={this.props.physicalDescript}/>
                     </div>
                     <br/>
-                    <div>
+                    <div className="tagContainer">
                         <h4>What is needed? *</h4>
-                        <div>
+                        <div className="tagRow1">
                             <div className="btnTag clothingTag">Clothing</div>
                             <div className="btnTag generalTag">General Assistance</div>
                             <div className="btnTag mentalTag">Mental Health Care</div>
                         </div>
-                        <div>
+                        <div className="tagRow2">
                             <div className="btnTag idTag">ID</div>
                             <div className="btnTag physicalTag">Physical Healthcare</div>
                             <div className="btnTag phoneTag">Phone</div>
