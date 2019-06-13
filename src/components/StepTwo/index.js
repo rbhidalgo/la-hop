@@ -24,6 +24,17 @@ onTagClick={this.props.onTagClick}
 /> */}
 
 class StepTwo extends Component {
+
+    state = {
+        bgColor: ''
+    }
+
+    boxClick = (e) => {
+        this.setState({
+          bgColor: 'rgba(217, 84, 80, 0.5)'
+        })
+      }
+
     render() {
         return (
             <div>
@@ -52,15 +63,15 @@ class StepTwo extends Component {
                     <div className="tagContainer">
                         <h4>What is needed? *</h4>
                         <div className="tagRow1">
-                            <div className="btnTag clothingTag">Clothing</div>
-                            <div className="btnTag generalTag">General Assistance</div>
-                            <div className="btnTag mentalTag">Mental Health Care</div>
+                            <div className="btnTag clothingTag" style={{backgroundColor: this.state.bgColor}} onClick={this.boxClick}>Clothing</div>
+                            <div className="btnTag generalTag" style={{backgroundColor: this.state.bgColor}} onClick={this.boxClick}>General Assistance</div>
+                            <div className="btnTag mentalTag" style={{backgroundColor: this.state.bgColor}} onClick={this.boxClick}>Mental Health Care</div>
                         </div>
                         <div className="tagRow2">
-                            <div className="btnTag idTag">ID</div>
-                            <div className="btnTag physicalTag">Physical Healthcare</div>
-                            <div className="btnTag phoneTag">Phone</div>
-                            <div className="btnTag foodTag">Food</div>
+                            <div className="btnTag idTag" style={{backgroundColor: this.state.bgColor}} onClick={this.boxClick}>ID</div>
+                            <div className="btnTag physicalTag" style={{backgroundColor: this.state.bgColor}} onClick={this.boxClick}>Physical Healthcare</div>
+                            <div className="btnTag phoneTag" style={{backgroundColor: this.state.bgColor}} onClick={this.boxClick}>Phone</div>
+                            <div className="btnTag foodTag"style={{backgroundColor: this.state.bgColor}} onClick={this.boxClick}>Food</div>
                         </div>
                     </div>
                     <div>
