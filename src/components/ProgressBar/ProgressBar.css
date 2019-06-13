@@ -2,12 +2,13 @@
 /***************************  ProgressBar  ***************************/
 /*********************************************************************/
 .indexedStep {
-    color: white;
+    color: black;
     width: 40px;
     height: 40px;
     font-size: 12px;
-    background-color: rgba(211, 211, 211, 0.8);
-    border-radius: 50%;
+    background-color: white;
+    border-radius: 100px;
+    border: 2px solid rgba(215, 85, 83, 1);
     display: flex;
     justify-content: center;
     align-items: center;
