@@ -43,6 +43,7 @@ body {
   
 }
 .requestContainer > textarea, .requestContainer > div > textarea {
+  padding: 1vw;
   height: 100px;
 
 }
