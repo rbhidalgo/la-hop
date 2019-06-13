@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Redirect } from "react-router-dom";
+import Button from '../Styles/Button'
 
 class StepThree extends Component {
 
@@ -24,7 +25,7 @@ class StepThree extends Component {
                     <input type="text" placeholder="email" name="email" onChange={this.props.changeHandler} value={this.props.email}/>
                     <input type="text" placeholder="phone" name="phone" onChange={this.props.changeHandler} value={this.props.phone}/>
                     <input type="checkbox" name="agreement" />
-                    <button type="submit" onClick={this.props.onSubmit}>Submit</button>
+                    <Button type="submit" onClick={this.props.onSubmit}></Button>
                 </form>
             </div>
         )
