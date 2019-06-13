@@ -32,7 +32,8 @@ class StepThree extends Component {
                         <input className="checkbox" type="checkbox" name="agreement" /><span>Have you seen <>"Learn More"</></span>
                     </section>
 
-                    <button type="submit" className="continueButton" onClick={this.props.onSubmit}>Continue</button>
+                    <button type="submit" className="compensate continueButton" onClick={this.props.onSubmit}>Continue</button>
+
                 </form>
             </>
         )

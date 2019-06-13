@@ -41,7 +41,7 @@ body {
   /* top: 0; */
   padding: 3px;
   text-align: center;
-  font-size: 12px;
+  font-size: 10px;
   display: fixed;
   border-radius: 100px;
   background-color: rgb(215, 85, 85);
@@ -65,13 +65,16 @@ body {
   border-radius: 5px;
   display: inline-block;
   width: 80vw;
+  margin-bottom: 8px
 }
 
 .requestContainer > input, .requestContainer > div > input {
   height: 40px;
+  
 }
 .requestContainer > textarea, .requestContainer > div > textarea {
   height: 100px;
+
 }
 
 .requestContainer > section {
@@ -82,6 +85,7 @@ body {
 .requestContainer > section > input, .requestContainer > section > span {
   display: inline-block;
   padding: 10px 5px;
+
 }
 
 .requestContainer > h4 {
@@ -103,6 +107,10 @@ body {
     border-radius: 5px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
+}
+
+.compensate {
+  margin-left: 25vw !important;
 }
 
 /*********************************************************************/
