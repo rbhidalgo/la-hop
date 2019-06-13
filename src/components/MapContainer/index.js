@@ -5,7 +5,7 @@ import Button from '../Styles/Button'
 
 const API_KEY = "AIzaSyDvWu69XjuxqaUQnd8ZWDl7QEtEQUwNRFY"
 
-export class MapContainer extends Component {
+export class StepOne extends Component {
   state = {
     place: null,
     lat: 34.0522,
@@ -50,6 +50,7 @@ export class MapContainer extends Component {
       <Marker onClick={this.onMarkerClick}
                name={'Current location'} lat={this.state.lat} lng={this.state.lng}/>
      </Map>
+     <br />
      <form>
         <textarea type="text" placeholder="location" name="location" onChange={this.props.changeHandler} value={this.props.location}/>
         <Button onClick={this.props.changeProgress}>Next Step</Button>
@@ -60,4 +61,4 @@ export class MapContainer extends Component {
 }
 
 export default GoogleApiWrapper({
- apiKey: ('AIzaSyBHLett8djBo62dDXj0EjCimF8Rd6E8cxg')})(MapContainer)
+ apiKey: ('AIzaSyBHLett8djBo62dDXj0EjCimF8Rd6E8cxg')})(StepOne)

@@ -2,12 +2,13 @@ import React, { Component } from "react";
 import { Redirect } from "react-router-dom";
 import TagButtons from 'react-tag-buttons';
 import Button from '../Styles/Button'
+import DatePicker   from './components/DatePicker'
 
 const tagsList = [
     {id:1, text:"Clothing"},
-    {id:2, text:"ID"},
+    {id:2, text:"General Assistance"},
     {id:3, text:"Mental Health Care"},
-    {id:4, text:"General Assistance"},
+    {id:4, text:"ID"},
     {id:5, text:"Physical Healthcare"},
     {id:6, text:"Phone"},
     {id:7, text:"Food"}
