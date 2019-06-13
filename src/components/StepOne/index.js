@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Map, Marker, GoogleApiWrapper, GroundOverlay} from 'google-maps-react';
+import {Map, Marker, GoogleApiWrapper} from 'google-maps-react';
 import { GoogleComponent } from 'react-google-location' 
 import Button from '../Styles/Button'
 
@@ -30,6 +30,7 @@ export class StepOne extends Component {
   return (
     <>
       <form>
+
         <div className="stepOneContainer">
           <div className="locatorContainer">
             <GoogleComponent
