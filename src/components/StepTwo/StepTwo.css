@@ -6,5 +6,12 @@
 }
 
 .btnTag {
-    border: 1px solid black
+    border-radius: 5px;
+    border: solid 1px #979797;
+    background: transparent;
 }
+
+.btnTag:selected {
+    background-color: rgba(217, 84, 80, 0.5);
+}
+
