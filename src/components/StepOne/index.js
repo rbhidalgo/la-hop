@@ -32,6 +32,13 @@ export class StepOne extends Component {
       <form>
 
         <div className="stepOneContainer">
+        <div className="stepStatus">
+          <div>1</div>
+
+          <span>Location<br />
+          Enter the location of person/people in need</span>
+          
+        </div>
           <div className="locatorContainer">
             <GoogleComponent
                 apiKey={API_KEY}

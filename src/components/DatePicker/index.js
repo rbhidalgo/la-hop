@@ -55,7 +55,6 @@ import { DateTime } from 'react-datetime-bootstrap';
  
 const DatePicker = (props) => (
     <div>
-        <h4>Date Picker</h4>
         <DateTime/>
         {/* <h4>Provide a value</h4> */}
         {/* <DateTime value="2017-04-20"/> */}

@@ -46,7 +46,8 @@ class App extends Component {
   };
 
   // Change progress function for progress bar 
-  changeProgress = () => {
+  changeProgress = (e) => {
+    e.preventDefault()
     console.log("changeProgress function hit")
     let currentNum = this.state.percent
     this.setState({
@@ -146,16 +147,16 @@ class App extends Component {
             <div className="barContainer">
             <StepProgressBar percent={this.state.percent}/>
             <br />
-            <div>(1) this will be where the progress bar updater will go.</div>
+
             </div>
             <hr />
             <hr />
             
-            <StepOne changeHandler={this.changeHandler} location={this.state.location} changeProgress={this.changeProgress}/>
+            {/* <StepOne changeHandler={this.changeHandler} location={this.state.location} changeProgress={this.changeProgress}/> */}
 
             <StepTwo onTagClick={this.onTagClick} tags={this.state.tags} peopleCount={this.state.peopleCount} peopleNames={this.state.peopleNames} changeHandler={this.changeHandler} physicalDescript={this.state.physicalDescript} changeProgress={this.changeProgress}/>
             
-            <StepThree org={this.state.org} changeHandler={this.changeHandler} name={this.state.name} email={this.state.email} phone={this.state.phone} onSubmit={this.onSubmit} />
+            {/* <StepThree org={this.state.org} changeHandler={this.changeHandler} name={this.state.name} email={this.state.email} phone={this.state.phone} onSubmit={this.onSubmit} /> */}
 
           </> }/>
         </Switch>
