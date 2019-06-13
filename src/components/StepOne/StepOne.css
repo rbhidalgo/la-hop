@@ -1,4 +1,16 @@
 
+
+.stepStatus > div {
+  border-radius: 100px;
+  background-color: rgb(215, 85, 85);
+  display: inline-block;
+  width: 33px;
+  height: 33px;
+}
+
+
+
+
 /*********************************************************************/
 /********************** GOOGLE MAP CONTAINER *************************/
 /*********************************************************************/
@@ -52,7 +64,9 @@
 
   .continueButton {
       width: 30vw;
-      margin: 0 35vw;
+      margin: 20px 35vw;
+      color: white;
+      height: 36px;
   }
 
   .gmnoprint {
