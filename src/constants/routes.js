@@ -1,4 +1,4 @@
-export const ROOT = '/';
+export const ROOT    = '/';
 export const REQUEST = '/request';
-export const INFO = '/learn-more';
+export const LEARN   = '/learn';
 export const CONTACT = '/contact';
