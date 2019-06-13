@@ -28,18 +28,28 @@ class StepTwo extends Component {
                         <DatePicker />
                     </div>
                     <br/>
+                    <div>
                     <input type="text" placeholder="peopleCount" name="peopleCount" onChange={this.props.changeHandler} value={this.props.peopleCount}/>
+                    </div>
                     <br/>
+                    <div>
                     <input type="text" placeholder="peopleNames" name="peopleNames" onChange={this.props.changeHandler} value={this.props.peopleNames}/>
+                    </div>
                     <br/>
+                    <div>
                     <textarea type="text" placeholder="physicalDescript" name="physicalDescript" onChange={this.props.changeHandler} value={this.props.physicalDescript}/>
+                    </div>
                     <br/>
+                    <div>
                     <TagButtons
                     dataSource={tagsList}
                     selectedDataSource={this.props.tags}
                     onTagClick={this.props.onTagClick}
                     />
+                    </div>
+                    <div>
                     <Button onClick={this.props.changeProgress}>Next Step</Button>
+                    </div>
                 </form>
             </div>
         )
