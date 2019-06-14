@@ -86,27 +86,27 @@ class StepTwo extends Component {
           </div>
                 <form className="stepTwoForm requestContainer">
                   
-                        <h4>Date last seen *</h4>
+                        <h4>Date last seen<span className="alert">*</span></h4>
                         <DatePicker />
                    
                     <br/>
                     <div>
-                        <h4>Number of people *</h4>
+                        <h4>Number of people<span className="alert">*</span></h4>
                         <input type="number" name="peopleCount" onChange={this.props.changeHandler} value={this.props.peopleCount}/>
                     </div>
                     <br/>
                     <div>
-                        <h4>Name of person/people requiring outreach *</h4>
+                        <h4>Name of person/people requiring outreach</h4>
                         <input type="text" name="peopleNames" onChange={this.props.changeHandler} value={this.props.peopleNames}/>
                     </div>
                     <br/>
                     <div>
-                        <h4>Description of person/people *</h4>
+                        <h4>Description of person/people<span className="alert">*</span></h4>
                         <textarea type="text" name="physicalDescript" onChange={this.props.changeHandler} value={this.props.physicalDescript}/>
                     </div>
                     <br/>
                     <div className="tagContainer">
-                        <h4>What is needed? <span>*</span></h4>
+                        <h4>What is needed?<span className="alert">*</span></h4>
                         <div className="tagRow1">
                             <div className="btnTag phoneTag" style={{backgroundColor: this.state.phone}} onClick={this.phoneClick}>Phone</div>
                             <div className="btnTag clothingTag" style={{backgroundColor: this.state.clothing}} onClick={this.clothingClick}>Clothing</div>
