@@ -271,7 +271,7 @@ select {
 }
 
 .RSPBprogression {
-  background: rgba(215, 85, 83, 1) !important;
+  background: rgba(215, 85, 83, .5) !important;
 }
 
 .barContainer {
@@ -506,11 +506,11 @@ select {
 }
 
 .indexedStep.accomplished {
-  background-color: rgba(215, 85, 83, 1);
+  background-color: rgba(215, 85, 83, .5);
 }
 
 .RSPBprogression {
-  background: rgba(215, 85, 83, 1) !important;
+  background: rgba(215, 85, 83, .5) !important;
 }
 
 .barContainer {

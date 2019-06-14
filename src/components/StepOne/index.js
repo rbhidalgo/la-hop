@@ -31,7 +31,7 @@ export class StepOne extends Component {
     <>
       <form>
 
-        <div className="stepOneContainer">
+        <div className="stepOneContainer">`
         <div className="stepStatus">
           <div>1</div>
 
@@ -53,7 +53,7 @@ export class StepOne extends Component {
               <Map google={this.props.google} zoom={12} initialCenter={{ lat: 34.0522, lng: -118.2437}} center= {{lat: this.state.lat, lng:this.state.lng}} style={{ height: '40%', width: '60%'}}>
                 <Marker onClick={this.onMarkerClick} name={'Current location'} lat={this.state.lat} lng={this.state.lng}/>
               </Map>
-            </div>
+            </div>  
             <div className="requestContainer">
               Description of Location
               <br/>
