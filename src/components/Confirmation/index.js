@@ -15,7 +15,7 @@ class Confirmation extends Component {
                 <br />
                 <p>Want to get more involved?</p>
                 <br />
-                <button className="volunteerButton">Volunteer</button>
+                <button className="volunteerButton" onClick={(e) => this.props.goHome(e)}>Volunteer</button>
             </div>
         )
     }

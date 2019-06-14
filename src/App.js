@@ -220,7 +220,7 @@ class App extends Component {
             
             {(this.state.stepThree) ? <StepThree org={this.state.org} changeHandler={this.changeHandler} name={this.state.name} email={this.state.email} phone={this.state.phone} onSubmit={this.onSubmit} submitRequest={this.submitRequest}/> : null }
 
-            {(this.state.confirmation) ? <Confirmation /> : null }
+            {(this.state.confirmation) ? <Confirmation goHome={this.goHome}/> : null }
 
           </> }/>
         </Switch>
