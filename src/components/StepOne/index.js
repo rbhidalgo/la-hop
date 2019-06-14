@@ -36,7 +36,7 @@ export class StepOne extends Component {
           <div>1</div>
 
           <span>Location<br />
-          Enter the location of person/people in need</span>
+          Enter the location of person in need</span>
           
         </div>
           <div className="locatorContainer">
@@ -57,7 +57,7 @@ export class StepOne extends Component {
             <div className="requestContainer">
               Description of Location
               <br/>
-              <textarea type="text" placeholder="location" name="location" onChange={this.props.changeHandler} value={this.props.location}/>
+              <textarea type="text" name="location" onChange={this.props.changeHandler} value={this.props.location}/>
             </div>
               <button type="submit" className="continueButton" onClick={(e) => this.props.stepOneClick(e)}>Continue</button>
         </div>
