@@ -37,7 +37,11 @@ class App extends Component {
     phone: '',
     agreement: false,
     loading: true,
-    percent: 0
+    percent: 0,
+    stepOne: true,
+    stepTwo: false,
+    stepThree: false,
+    confirmation: false
   };
 
   changeHandler = e => {
@@ -47,8 +51,7 @@ class App extends Component {
   };
 
   // Change progress function for progress bar 
-  changeProgress = (e) => {
-    e.preventDefault()
+  changeProgress = () => {
     console.log("changeProgress function hit")
     let currentNum = this.state.percent
     this.setState({
@@ -68,6 +71,65 @@ class App extends Component {
       tags: tags
     });
   };
+
+  stepOneClick = (e) => {
+    e.preventDefault()
+    console.log('stepOneClick function hit')
+    this.changeProgress()
+    this.setState({
+      stepOne: false,
+      stepTwo: true
+    })
+  }
+
+  stepTwoClick = (e) => {
+    e.preventDefault()
+    console.log('stepTwoClick function hit')
+    this.changeProgress()
+    this.setState({
+      stepTwo: false,
+      stepThree: true
+    })
+  }
+
+  submitRequest = (e) => {
+    e.preventDefault()
+    console.log('submitRequest function hit')
+    this.setState({
+      stepThree: false,
+      confirmation: true
+    })
+  }
+
+  goHome = (e) => {
+    e.preventDefault()
+    console.log("goHome function hit")
+    this.setState({
+      message: "",
+      location: '',
+      date: '',
+      peopleCount: 0,
+      peopleNames: '',
+      physicalDescript: '',
+      needsDescript: '',
+      tags: [],
+      name: '',
+      org: '',
+      selfDescript: '',
+      email: '',
+      phone: '',
+      agreement: false,
+      loading: true,
+      percent: 0,
+      stepOne: true,
+      stepTwo: false,
+      stepThree: false,
+      confirmation: false
+    })
+ 
+  }
+
+
 
   onSubmit = async e => {
     e.preventDefault();
@@ -152,13 +214,13 @@ class App extends Component {
             </div>
 
             
-            <StepOne changeHandler={this.changeHandler} location={this.state.location} changeProgress={this.changeProgress}/>
+            {(this.state.stepOne) ? <StepOne changeHandler={this.changeHandler} location={this.state.location} changeProgress={this.changeProgress} stepOneClick={this.stepOneClick}/> : null}
 
-            <StepTwo onTagClick={this.onTagClick} tags={this.state.tags} peopleCount={this.state.peopleCount} peopleNames={this.state.peopleNames} changeHandler={this.changeHandler} physicalDescript={this.state.physicalDescript} changeProgress={this.changeProgress}/>
+            {(this.state.stepTwo) ? <StepTwo onTagClick={this.onTagClick} tags={this.state.tags} peopleCount={this.state.peopleCount} peopleNames={this.state.peopleNames} changeHandler={this.changeHandler} physicalDescript={this.state.physicalDescript} changeProgress={this.changeProgress} stepTwoClick={this.stepTwoClick}/> : null }
             
-            <StepThree org={this.state.org} changeHandler={this.changeHandler} name={this.state.name} email={this.state.email} phone={this.state.phone} onSubmit={this.onSubmit} />
+            {(this.state.stepThree) ? <StepThree org={this.state.org} changeHandler={this.changeHandler} name={this.state.name} email={this.state.email} phone={this.state.phone} onSubmit={this.onSubmit} submitRequest={this.submitRequest}/> : null }
 
-            <Confirmation />
+            {(this.state.confirmation) ? <Confirmation goHome={this.goHome}/> : null }
 
           </> }/>
         </Switch>
