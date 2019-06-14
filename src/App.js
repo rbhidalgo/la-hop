@@ -203,10 +203,6 @@ class App extends Component {
             <LearnMore />
           }/>
           <Route exact path={routes.REQUEST} render={() => <>
-          <h1 style={{marginTop: "40px"}}>REQUEST PLACE HOLDER</h1>
-          </> }/>
-          <Route exact path={routes.ROOT} render={() => <>
-
             <div className="barContainer">
             <StepProgressBar percent={this.state.percent}/>
             <br />
@@ -221,6 +217,10 @@ class App extends Component {
             {(this.state.stepThree) ? <StepThree org={this.state.org} changeHandler={this.changeHandler} name={this.state.name} email={this.state.email} phone={this.state.phone} onSubmit={this.onSubmit} submitRequest={this.submitRequest}/> : null }
 
             {(this.state.confirmation) ? <Confirmation goHome={this.goHome}/> : null }
+          </> }/>
+          <Route exact path={routes.ROOT} render={() => <>
+
+            
 
           </> }/>
         </Switch>
