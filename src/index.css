@@ -304,6 +304,7 @@ select {
   font-size: 10px;
   display: fixed;
   border-radius: 100px;
+  color: white;
   background-color: rgb(215, 85, 85);
   display: inline-block;
   width: 5vw;
@@ -541,7 +542,7 @@ select {
   font-size: 30px;
   display: fixed;
   border-radius: 100px;
-  background-color: rgb(215, 85, 85);
+  background-color: rgb(215, 85, 85, 0.5);
   display: inline-block;
   width: 58px;
   height: 58px
