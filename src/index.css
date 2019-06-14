@@ -107,10 +107,6 @@ margin-left: 20px;
 .compensate {
   margin-left: 25vw !important;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> master
 .volunteerButton {
   width: 30vw;
   margin: 20px 35vw;
@@ -267,11 +263,11 @@ select {
 }
 
 .indexedStep.accomplished {
-  background-color: rgba(215, 85, 83, .5);
+  background-color: #ebaaa9;
 }
 
 .RSPBprogression {
-  background: rgba(215, 85, 83, .5) !important;
+  background:#ebaaa9 !important;
 }
 
 .barContainer {
@@ -506,11 +502,11 @@ select {
 }
 
 .indexedStep.accomplished {
-  background-color: rgba(215, 85, 83, .5);
+  background-color: #ebaaa9;
 }
 
 .RSPBprogression {
-  background: rgba(215, 85, 83, .5) !important;
+  background: #ebaaa9 !important;
 }
 
 .barContainer {
