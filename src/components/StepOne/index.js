@@ -5,7 +5,7 @@ import Button from '../Styles/Button'
 
 import './StepOne.css'
 
-const API_KEY = "AIzaSyDvWu69XjuxqaUQnd8ZWDl7QEtEQUwNRFY"
+const API_KEY = process.env.MAP_API_KEY;
 
 export class StepOne extends Component {
   state = {
@@ -69,4 +69,4 @@ export class StepOne extends Component {
 }
 
 export default GoogleApiWrapper({
- apiKey: ('AIzaSyBHLett8djBo62dDXj0EjCimF8Rd6E8cxg')})(StepOne)
+ apiKey: (process.env.MAP_API_KEY2)})(StepOne)
